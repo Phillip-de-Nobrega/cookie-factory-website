@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Playfair+Display+SC:wght@400;700&display=swap');
+
+/* ─── Navigation ─────────────────────────────────────── */
+#nav {
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  border-bottom: 1px solid transparent;
+}
+#nav.nav-solid {
+  background-color: #fff;
+  border-color: #E7E0D8;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.06);
+}
+
+.nav-link { color: rgba(255,255,255,0.85); font-size: 14px; font-weight: 500; transition: color 0.2s ease; }
+.nav-link:hover { color: #fff; }
+.nav-link.is-active { color: #fff; font-weight: 600; }
+#nav.nav-solid .nav-link { color: #4B5563; }
+#nav.nav-solid .nav-link:hover { color: #111827; }
+#nav.nav-solid .nav-link.is-active { color: #C8202D; font-weight: 600; }
+
+.nav-cta {
+  display: inline-flex;
+  align-items: center;
+  padding: 9px 22px;
+  border-radius: 4px;
+  border: 1.5px solid rgba(255,255,255,0.6);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.nav-cta:hover { background-color: rgba(255,255,255,0.1); }
+#nav.nav-solid .nav-cta { background-color: #C8202D; border-color: #C8202D; }
+#nav.nav-solid .nav-cta:hover { background-color: #9E1621; border-color: #9E1621; }
+
+.burger-icon { color: #fff; transition: color 0.2s ease; }
+#nav.nav-solid .burger-icon { color: #374151; }
+
+/* ─── Mobile Nav ─────────────────────────────────────── */
+#mobile-nav {
+  transform: translateY(calc(-100% - 90px));
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
+}
+#mobile-nav.open { transform: translateY(0); pointer-events: all; }
+
+/* ─── Scroll Reveal ──────────────────────────────────── */
+.fade-up {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.65s ease, transform 0.65s ease;
+}
+.fade-up.visible { opacity: 1; transform: translateY(0); }
+.delay-1 { transition-delay: 100ms; }
+.delay-2 { transition-delay: 200ms; }
+.delay-3 { transition-delay: 300ms; }
+.delay-4 { transition-delay: 400ms; }
+
+/* ─── Hero ───────────────────────────────────────────── */
+.hero-bg {
+  background-image: url('../assets/images/hero-baker.jpeg');
+  background-size: cover;
+  background-position: center 20%;
+}
+
+/* ─── Form Inputs ────────────────────────────────────── */
+.field {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 14px;
+  font-family: 'Karla', sans-serif;
+  color: #111827;
+  background: #fff;
+  border: 1.5px solid #E7E0D8;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.field:focus { border-color: #C8202D; box-shadow: 0 0 0 3px rgba(200, 32, 45, 0.1); }
+.field::placeholder { color: #9CA3AF; }
+select.field { appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%236B7280' stroke-width='1.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 14px center; padding-right: 40px; }
+textarea.field { resize: vertical; min-height: 130px; }
+
+/* ─── Reduced Motion ─────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  * { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
+  .fade-up { opacity: 1 !important; transform: none !important; }
+}

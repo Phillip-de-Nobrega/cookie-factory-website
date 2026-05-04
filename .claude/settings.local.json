@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(gh api *)",
+      "Bash(npx uipro-cli *)",
+      "Bash(cp '/Users/phillip/Desktop/The Cookie Factory | DM/Product Packets/cookie_factory_profile_photo.png' '/Users/phillip/Desktop/Cookie Factory Website/assets/images/logo.png')",
+      "Bash(cp '/Users/phillip/Desktop/The Cookie Factory | DM/Product Photos/TCF_280911 7551.jpeg' '/Users/phillip/Desktop/Cookie Factory Website/assets/images/hero-baker.jpeg')",
+      "Bash(cp '/Users/phillip/Desktop/The Cookie Factory | DM/Product Photos/TCF_280911 7572.jpeg' '/Users/phillip/Desktop/Cookie Factory Website/assets/images/hero-rolling.jpeg')",
+      "Bash(cp '/Users/phillip/Desktop/The Cookie Factory | DM/Product Photos/TCF_280911 7582.jpeg' '/Users/phillip/Desktop/Cookie Factory Website/assets/images/team.jpeg')",
+      "Bash(cp '/Users/phillip/Desktop/The Cookie Factory | DM/Product Photos/TCF_280911 7561.jpeg' '/Users/phillip/Desktop/Cookie Factory Website/assets/images/packaging-team.jpeg')",
+      "WebFetch(domain:www.mantellis.com)",
+      "Bash(python3 .claude/skills/ui-ux-pro-max/scripts/search.py \"food manufacturing biscuit bakery professional artisan clean modern\" --design-system -p \"The Cookie Factory\")",
+      "Bash(python3 .claude/skills/ui-ux-pro-max/scripts/search.py \"artisan premium food brand heritage\" --domain style)",
+      "Bash(python3 .claude/skills/ui-ux-pro-max/scripts/search.py \"elegant serif professional food\" --domain typography)",
+      "Bash(cp \"/Users/phillip/Desktop/The Cookie Factory | DM/Product Photos/product-mini-biscuits.jpeg\" \"/Users/phillip/Desktop/Cookie Factory Website/assets/images/product-mini-biscuits.jpeg\")",
+      "Bash(cp \"/Users/phillip/Desktop/The Cookie Factory | DM/Product Photos/product-assorted-bucket.png\" \"/Users/phillip/Desktop/Cookie Factory Website/assets/images/product-assorted-bucket.png\")",
+      "Bash(gh auth *)"
+    ]
+  }
+}
