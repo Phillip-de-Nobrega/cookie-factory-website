@@ -218,12 +218,40 @@
               <textarea id="motivation" name="motivation" placeholder="Tell us why you'd like to be part of our team." class="field"></textarea>
             </div>
 
+            <!-- CV Upload -->
+            <div>
+              <label class="block text-xs font-semibold text-gray-500 tracking-[0.08em] uppercase mb-2">
+                Electronic CV / Résumé <span class="text-brand">*</span>
+              </label>
+              <label id="cv-drop-zone" for="cv_file" class="flex flex-col items-center justify-center gap-3 w-full border-2 border-dashed border-warm-border rounded-lg p-8 cursor-pointer hover:border-brand hover:bg-cream transition-colors group">
+                <div class="w-12 h-12 rounded-full bg-cream group-hover:bg-white border border-warm-border flex items-center justify-center transition-colors">
+                  <i data-lucide="upload" class="w-5 h-5 text-brand"></i>
+                </div>
+                <div class="text-center">
+                  <p id="cv-label" class="text-sm font-semibold text-gray-700 group-hover:text-brand transition-colors">Click to select your CV</p>
+                  <p class="text-xs text-gray-400 mt-1">PDF, Word (.doc, .docx) — max 10 MB</p>
+                </div>
+                <input id="cv_file" name="cv_filename" type="file" accept=".pdf,.doc,.docx" class="sr-only">
+              </label>
+              <div id="cv-selected" class="hidden mt-3 flex items-center gap-3 bg-cream border border-warm-border rounded-lg px-4 py-3">
+                <i data-lucide="file-text" class="w-4 h-4 text-brand flex-shrink-0"></i>
+                <span id="cv-filename" class="text-sm text-gray-700 font-medium truncate flex-1"></span>
+                <button type="button" id="cv-clear" class="text-gray-400 hover:text-brand transition-colors flex-shrink-0">
+                  <i data-lucide="x" class="w-4 h-4"></i>
+                </button>
+              </div>
+              <div class="mt-3 flex items-start gap-2 bg-yellow-50 border border-yellow-200 rounded-lg px-4 py-3">
+                <i data-lucide="info" class="w-4 h-4 text-yellow-600 flex-shrink-0 mt-0.5"></i>
+                <p class="text-xs text-yellow-700 leading-relaxed">After clicking Submit, your email app will open. <strong>Attach your CV to the email</strong> before you hit send.</p>
+              </div>
+            </div>
+
             <div class="pt-2">
               <button type="submit" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-brand hover:bg-brand-dark text-white text-xs font-semibold tracking-[0.1em] uppercase px-10 py-4 rounded transition-colors cursor-pointer">
                 <i data-lucide="send" class="w-4 h-4"></i>
                 Submit Application
               </button>
-              <p class="text-gray-400 text-xs mt-4 leading-relaxed">This will open your email client with your application pre-filled. Simply hit send — we'll be in touch if a suitable opportunity arises.</p>
+              <p class="text-gray-400 text-xs mt-4 leading-relaxed">Your email app will open with your application ready to send. Remember to attach your CV — we'll be in touch if the right opportunity comes up.</p>
             </div>
 
           </form>
@@ -321,7 +349,7 @@
           <p class="text-white text-xs font-semibold tracking-[0.15em] uppercase mb-6">Navigate</p>
           <ul class="space-y-3">
             <li><a href="index.html" class="text-white/45 hover:text-white text-sm transition-colors">Home</a></li>
-            <li><a href="products.html" class="text-white/45 hover:text-white text-sm transition-colors">Products &amp; Prices</a></li>
+            <li><a href="products.html" class="text-white/45 hover:text-white text-sm transition-colors">Products</a></li>
             <li><a href="where-to-buy.html" class="text-white/45 hover:text-white text-sm transition-colors">Where to Buy</a></li>
             <li><a href="order.html" class="text-white/45 hover:text-white text-sm transition-colors">Place an Order</a></li>
             <li><a href="careers.html" class="text-white/45 hover:text-white text-sm transition-colors">Careers</a></li>
@@ -332,7 +360,7 @@
           <p class="text-white text-xs font-semibold tracking-[0.15em] uppercase mb-6">Products</p>
           <ul class="space-y-3">
             <li><a href="products.html#home-style-cookies" class="text-white/45 hover:text-white text-sm transition-colors">Home-Style Cookies</a></li>
-            <li><a href="products.html#creamed-biscuits" class="text-white/45 hover:text-white text-sm transition-colors">Creamed Biscuits</a></li>
+            <li><a href="products.html#creamed-biscuits" class="text-white/45 hover:text-white text-sm transition-colors">Luxury Creams</a></li>
             <li><a href="products.html#mini-biscuits" class="text-white/45 hover:text-white text-sm transition-colors">Mini Biscuits</a></li>
             <li><a href="products.html#assorted-bucket" class="text-white/45 hover:text-white text-sm transition-colors">Assorted Bucket</a></li>
             <li><a href="products.html#value-packs" class="text-white/45 hover:text-white text-sm transition-colors">Value Packs</a></li>
@@ -350,8 +378,8 @@
               <span class="text-white/45 text-sm">Mon–Fri: 8:00am – 5:00pm</span>
             </li>
             <li class="flex items-center gap-3">
-              <i data-lucide="phone" class="w-4 h-4 text-white/30 flex-shrink-0"></i>
-              <a href="tel:0217056274" class="text-white/45 hover:text-white text-sm transition-colors">021 705 6274</a>
+              <i data-lucide="message-circle" class="w-4 h-4 text-white/30 flex-shrink-0"></i>
+              <a href="https://wa.me/27716737748" target="_blank" rel="noopener" class="text-white/45 hover:text-white text-sm transition-colors">+27 71 673 7748</a>
             </li>
             <li class="flex items-center gap-3">
               <i data-lucide="mail" class="w-4 h-4 text-white/30 flex-shrink-0"></i>
@@ -361,7 +389,7 @@
         </div>
       </div>
       <div class="pt-7 flex flex-col sm:flex-row items-center justify-between gap-3 text-white/25 text-xs">
-        <p>&copy; 2025 The Cookie Factory. All rights reserved.</p>
+        <p>&copy; 2026 The Cookie Factory. All rights reserved.</p>
         <p>31 River Park, Diep River, Cape Town</p>
       </div>
     </div>
