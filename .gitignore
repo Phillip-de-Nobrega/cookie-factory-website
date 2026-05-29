@@ -3,3 +3,17 @@
 data/private/
 *.PDF
 *.pdf
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Dependencies
+node_modules/
+
+# Key and certificate files
+*.pem
+*.key
+*.p12
+*.pfx
