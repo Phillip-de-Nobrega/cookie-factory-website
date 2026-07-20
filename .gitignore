@@ -1,8 +1,10 @@
 .claude/
 .DS_Store
+assets/images/originals/
 data/private/
 *.PDF
 *.pdf
+!assets/docs/*.pdf
 
 # Environment files
 .env

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found — The Cookie Factory</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="assets/images/logo.png">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        fontFamily: {
+          serif: ['"Playfair Display SC"', 'Georgia', 'serif'],
+          sans: ['Karla', 'system-ui', 'sans-serif'],
+        },
+        extend: {
+          colors: {
+            brand: { DEFAULT: '#C8202D', dark: '#9E1621' },
+            cream: '#FDF8F4',
+            warm: '#F0E6D6',
+            'warm-border': '#E7E0D8',
+          },
+        },
+      },
+    }
+  </script>
+</head>
+<body class="font-sans antialiased text-gray-900 bg-cream">
+
+  <section class="min-h-screen flex items-center">
+    <div class="max-w-xl mx-auto px-6 text-center py-20">
+      <a href="/" class="inline-block mb-8">
+        <img src="assets/images/logo.png" alt="The Cookie Factory" class="h-16 w-16 rounded-full object-cover mx-auto">
+      </a>
+      <p class="text-6xl mb-4">🍪</p>
+      <h1 class="font-serif text-4xl lg:text-5xl text-gray-900 leading-tight mb-5">This page crumbled away.</h1>
+      <p class="text-gray-500 text-base leading-relaxed mb-10">We couldn't find the page you were looking for — but there are still plenty of biscuits to discover.</p>
+      <div class="flex flex-wrap gap-4 justify-center">
+        <a href="/" class="inline-flex items-center gap-2 bg-brand hover:bg-brand-dark text-white text-xs font-semibold tracking-[0.1em] uppercase px-7 py-4 rounded transition-colors">
+          Back to Home
+        </a>
+        <a href="/products.html" class="inline-flex items-center gap-2 border border-warm-border hover:border-brand text-gray-700 text-xs font-semibold tracking-[0.1em] uppercase px-7 py-4 rounded transition-colors">
+          Browse Products
+        </a>
+        <a href="https://wa.me/27716737748" target="_blank" rel="noopener" class="inline-flex items-center gap-2 border border-warm-border hover:border-brand text-gray-700 text-xs font-semibold tracking-[0.1em] uppercase px-7 py-4 rounded transition-colors">
+          WhatsApp Us
+        </a>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

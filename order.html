@@ -1,11 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-ZA">
 <head>
+  <!--
+       🍪
+      ( o o )
+       \___/
+    You found the crumbs behind the curtain too.
+    We're hiring: thecookiefactory.co.za/careers.html
+  -->
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Place an Order — The Cookie Factory</title>
-  <meta name="description" content="Request a delivery order from The Cookie Factory. We deliver nationwide by courier at buyer's expense. Fill in our order request form and we'll be in touch within one business day.">
-  <meta property="og:image" content="https://phillip-de-nobrega.github.io/cookie-factory-website/assets/images/logo.png">
+  <meta name="description" content="Request a delivery order from The Cookie Factory. We courier nationwide at buyer's expense — fill in the form and we'll reply within one business day.">
+  <link rel="canonical" href="https://thecookiefactory.co.za/order.html">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://thecookiefactory.co.za/order.html">
+  <meta property="og:title" content="Place an Order — The Cookie Factory">
+  <meta property="og:description" content="Request a delivery order from The Cookie Factory. We courier nationwide at buyer's expense — fill in the form and we'll reply within one business day.">
+  <meta property="og:image" content="https://thecookiefactory.co.za/assets/images/og-share.jpg">
+  <meta property="og:site_name" content="The Cookie Factory">
+  <meta property="og:locale" content="en_ZA">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Place an Order — The Cookie Factory">
+  <meta name="twitter:description" content="Request a delivery order from The Cookie Factory. We courier nationwide at buyer's expense — fill in the form and we'll reply within one business day.">
+  <meta name="twitter:image" content="https://thecookiefactory.co.za/assets/images/og-share.jpg">
   <link rel="icon" href="assets/images/logo.png">
   <link rel="stylesheet" href="css/styles.css">
   <script src="https://cdn.tailwindcss.com"></script>
@@ -27,6 +46,16 @@
       },
     }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://thecookiefactory.co.za/"},
+      {"@type": "ListItem", "position": 2, "name": "Order", "item": "https://thecookiefactory.co.za/order.html"}
+    ]
+  }
+  </script>
 </head>
 <body class="font-sans antialiased text-gray-900 bg-white">
 
@@ -38,6 +67,7 @@
       </a>
       <ul class="hidden lg:flex items-center gap-1">
         <li><a href="index.html" class="nav-link px-4 py-2 rounded-md">Home</a></li>
+        <li><a href="about.html" class="nav-link px-4 py-2 rounded-md">About</a></li>
         <li><a href="products.html" class="nav-link px-4 py-2 rounded-md">Products</a></li>
         <li><a href="where-to-buy.html" class="nav-link px-4 py-2 rounded-md">Where to Buy</a></li>
         <li><a href="order.html" class="nav-link px-4 py-2 rounded-md">Order</a></li>
@@ -58,6 +88,7 @@
     <div class="max-w-7xl mx-auto px-6 py-5">
       <ul class="flex flex-col gap-0.5 mb-5">
         <li><a href="index.html" class="block px-4 py-3 text-sm font-medium text-gray-600 hover:text-gray-900 hover:bg-cream rounded-md transition-colors">Home</a></li>
+        <li><a href="about.html" class="block px-4 py-3 text-sm font-medium text-gray-600 hover:text-gray-900 hover:bg-cream rounded-md transition-colors">About</a></li>
         <li><a href="products.html" class="block px-4 py-3 text-sm font-medium text-gray-600 hover:text-gray-900 hover:bg-cream rounded-md transition-colors">Products</a></li>
         <li><a href="where-to-buy.html" class="block px-4 py-3 text-sm font-medium text-gray-600 hover:text-gray-900 hover:bg-cream rounded-md transition-colors">Where to Buy</a></li>
         <li><a href="order.html" class="block px-4 py-3 text-sm font-medium text-gray-600 hover:text-gray-900 hover:bg-cream rounded-md transition-colors">Order</a></li>
@@ -80,6 +111,35 @@
       <p class="text-gray-500 text-lg leading-relaxed max-w-2xl">Fill in the form below and we'll respond within one business day to confirm availability, pricing, and courier costs.</p>
     </div>
   </div>
+
+  <!-- Delivery Promise -->
+  <section class="border-b border-warm-border bg-white">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 py-10">
+      <div class="grid sm:grid-cols-3 gap-6">
+        <div class="flex items-start gap-3">
+          <i data-lucide="truck" class="w-5 h-5 text-brand flex-shrink-0 mt-0.5"></i>
+          <div>
+            <p class="text-gray-800 text-sm font-semibold mb-0.5">Nationwide courier delivery</p>
+            <p class="text-gray-500 text-xs leading-relaxed">We deliver anywhere in South Africa by courier, at buyer's expense.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-3">
+          <i data-lucide="store" class="w-5 h-5 text-brand flex-shrink-0 mt-0.5"></i>
+          <div>
+            <p class="text-gray-800 text-sm font-semibold mb-0.5">Collect from the factory</p>
+            <p class="text-gray-500 text-xs leading-relaxed">Pick up fresh from our Diep River factory store, Mon&ndash;Fri.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-3">
+          <i data-lucide="clock" class="w-5 h-5 text-brand flex-shrink-0 mt-0.5"></i>
+          <div>
+            <p class="text-gray-800 text-sm font-semibold mb-0.5">Fast response</p>
+            <p class="text-gray-500 text-xs leading-relaxed">We reply within one business day with availability and pricing.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Order Form + Sidebar -->
   <section class="py-20 lg:py-28">
@@ -248,7 +308,7 @@
     <div class="max-w-7xl mx-auto px-6 lg:px-8">
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-16 pb-12 border-b border-white/8">
         <div>
-          <img src="assets/images/logo.png" alt="The Cookie Factory" class="h-12 w-12 rounded-full object-cover mb-5">
+          <img src="assets/images/logo.png" alt="The Cookie Factory" loading="lazy" class="h-12 w-12 rounded-full object-cover mb-5">
           <p class="text-white/45 text-sm leading-relaxed mb-7">Handcrafted biscuits made with love since 2002. Quality you can taste in every bite.</p>
           <div class="flex gap-3">
             <a href="https://www.instagram.com/thecookiefactory.official/" target="_blank" rel="noopener" aria-label="Instagram" class="w-9 h-9 rounded-lg bg-white/8 hover:bg-brand flex items-center justify-center transition-colors cursor-pointer">
@@ -263,6 +323,7 @@
           <p class="text-white text-xs font-semibold tracking-[0.15em] uppercase mb-6">Navigate</p>
           <ul class="space-y-3">
             <li><a href="index.html" class="text-white/45 hover:text-white text-sm transition-colors">Home</a></li>
+            <li><a href="about.html" class="text-white/45 hover:text-white text-sm transition-colors">About</a></li>
             <li><a href="products.html" class="text-white/45 hover:text-white text-sm transition-colors">Products</a></li>
             <li><a href="where-to-buy.html" class="text-white/45 hover:text-white text-sm transition-colors">Where to Buy</a></li>
             <li><a href="order.html" class="text-white/45 hover:text-white text-sm transition-colors">Place an Order</a></li>
@@ -303,7 +364,7 @@
         </div>
       </div>
       <div class="pt-7 flex flex-col sm:flex-row items-center justify-between gap-3 text-white/25 text-xs">
-        <p>&copy; 2026 The Cookie Factory. All rights reserved.</p>
+        <p><span class="copyright-text">&copy; 2026 The Cookie Factory. All rights reserved.</span> <a href="secret-recipe.html" class="egg-crumb-link" rel="nofollow" aria-label="?">·</a></p>
         <p>31 River Park, Diep River, Cape Town</p>
       </div>
     </div>

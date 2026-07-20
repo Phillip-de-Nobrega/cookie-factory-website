@@ -1,3 +1,6 @@
+console.log('%c🍪  You found the crumbs.', 'font-size:20px;font-weight:bold;color:#8B5A2B;');
+console.log('%cIf you can read this, you can probably read code too. We\'re hiring: thecookiefactory.co.za/careers.html', 'font-size:13px;color:#6b6b6b;');
+
 document.addEventListener('DOMContentLoaded', () => {
 
   /* ─── Nav scroll behaviour ───────────────────────── */
@@ -196,5 +199,79 @@ document.addEventListener('DOMContentLoaded', () => {
       location.href = 'mailto:' + to + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
     });
   });
+
+  /* ─── Easter eggs ────────────────────────────────── */
+  var EGG_TOTAL = 3;
+
+  var toastQueue = [];
+  var toastShowing = false;
+
+  function showToast(message, duration) {
+    toastQueue.push({ message: message, duration: duration || 3200 });
+    processToastQueue();
+  }
+
+  function processToastQueue() {
+    if (toastShowing || toastQueue.length === 0) return;
+    toastShowing = true;
+    var item = toastQueue.shift();
+    var toast = document.createElement('div');
+    toast.className = 'egg-toast';
+    toast.textContent = item.message;
+    document.body.appendChild(toast);
+    requestAnimationFrame(function() { toast.classList.add('visible'); });
+    setTimeout(function() {
+      toast.classList.remove('visible');
+      setTimeout(function() {
+        toast.remove();
+        toastShowing = false;
+        processToastQueue();
+      }, 350);
+    }, item.duration);
+  }
+
+  function unlockEgg(id) {
+    var found = [];
+    try { found = JSON.parse(localStorage.getItem('cf_eggs_found') || '[]'); } catch (e) { found = []; }
+    if (found.indexOf(id) !== -1) return;
+    found.push(id);
+    try { localStorage.setItem('cf_eggs_found', JSON.stringify(found)); } catch (e) { /* ignore */ }
+    showToast('🍪 Easter egg found! (' + found.length + '/' + EGG_TOTAL + ')');
+  }
+
+  /* Footer copyright click — founding fact reveal */
+  var copyrightTextEl = document.querySelector('.copyright-text');
+  if (copyrightTextEl) {
+    var originalCopyrightText = copyrightTextEl.textContent;
+    var copyrightP = copyrightTextEl.closest('p');
+    copyrightP.style.cursor = 'pointer';
+    copyrightP.addEventListener('click', function() {
+      copyrightTextEl.textContent = 'Est. 2002 · Diep River · still baking fresh biscuits today 🍪';
+      unlockEgg('footer-click');
+      setTimeout(function() { copyrightTextEl.textContent = originalCopyrightText; }, 3200);
+    });
+  }
+
+  /* Crumb link shouldn't trigger the footer-click reveal above it */
+  document.querySelectorAll('.egg-crumb-link').forEach(function(crumb) {
+    crumb.addEventListener('click', function(e) { e.stopPropagation(); });
+  });
+
+  /* Tab-away title swap */
+  var originalTitle = document.title;
+  var titleEggFound = false;
+  document.addEventListener('visibilitychange', function() {
+    if (document.hidden) {
+      document.title = 'Come back! 🍪';
+      if (!titleEggFound) { titleEggFound = true; unlockEgg('tab-title'); }
+    } else {
+      document.title = originalTitle;
+    }
+  });
+
+  /* Secret recipe page visit */
+  if (page === 'secret-recipe.html') {
+    unlockEgg('secret-recipe');
+  }
 
 });

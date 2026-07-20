@@ -109,6 +109,40 @@ textarea.field { resize: vertical; min-height: 130px; }
 #back-to-top.visible { opacity: 1; transform: translateY(0); pointer-events: all; }
 #back-to-top:hover { background-color: #9E1621; }
 
+/* ─── Easter Eggs ─────────────────────────────────────── */
+.egg-toast {
+  position: fixed;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%) translateY(20px);
+  background: #1f2937;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: 'Karla', sans-serif;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+  z-index: 9999;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  pointer-events: none;
+  max-width: 90vw;
+  text-align: center;
+}
+.egg-toast.visible { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+.egg-crumb-link {
+  display: inline-block;
+  opacity: 0.25;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+  padding: 6px 10px;
+  margin: -6px -4px;
+  font-size: 16px;
+  line-height: 1;
+}
+.egg-crumb-link:hover { opacity: 0.8; }
+
 /* ─── Reduced Motion ─────────────────────────────────── */
 @media (prefers-reduced-motion: reduce) {
   * { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
