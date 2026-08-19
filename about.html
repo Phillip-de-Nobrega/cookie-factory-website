@@ -1,286 +1,221 @@
 <!DOCTYPE html>
 <html lang="en-ZA">
 <head>
+  <!--
+       🍪
+      ( o o )
+       \___/
+    You found the crumbs behind the curtain too.
+    We're hiring: thecookiefactory.co.za/careers.html
+  -->
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Our Story — The Cookie Factory, Diep River</title>
-  <meta name="description" content="The Cookie Factory has been handcrafting biscuits in Diep River, Cape Town since 2002 — stone-ground flour, master bakers, and no two biscuits ever quite the same.">
+  <meta name="description" content="The Cookie Factory has been handcrafting biscuits in Diep River, Cape Town since 2002 — stone-ground flour, master bakers, and no two biscuits ever the same.">
   <link rel="canonical" href="https://thecookiefactory.co.za/about.html">
+  <meta name="theme-color" content="#C8202D">
+  <meta name="color-scheme" content="light dark">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://thecookiefactory.co.za/about.html">
   <meta property="og:title" content="Our Story — The Cookie Factory, Diep River">
-  <meta property="og:description" content="Handcrafting biscuits in Diep River, Cape Town since 2002 — stone-ground flour, master bakers, and no two biscuits ever quite the same.">
+  <meta property="og:description" content="Handcrafting biscuits in Diep River, Cape Town since 2002 — stone-ground flour, master bakers, and no two biscuits ever the same.">
   <meta property="og:image" content="https://thecookiefactory.co.za/assets/images/og-share.jpg">
   <meta property="og:site_name" content="The Cookie Factory">
   <meta property="og:locale" content="en_ZA">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Our Story — The Cookie Factory, Diep River">
-  <meta name="twitter:description" content="Handcrafting biscuits in Diep River, Cape Town since 2002 — stone-ground flour, master bakers, and no two biscuits ever quite the same.">
+  <meta name="twitter:description" content="Handcrafting biscuits in Diep River, Cape Town since 2002 — stone-ground flour, master bakers, and no two biscuits ever the same.">
   <meta name="twitter:image" content="https://thecookiefactory.co.za/assets/images/og-share.jpg">
   <link rel="icon" href="assets/images/logo.png">
+  <link rel="apple-touch-icon" href="assets/images/logo.png">
+  <link rel="preload" href="assets/fonts/karla.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/playfair-sc-700.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/styles.css">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        fontFamily: {
-          serif: ['"Playfair Display SC"', 'Georgia', 'serif'],
-          sans: ['Karla', 'system-ui', 'sans-serif'],
-        },
-        extend: {
-          colors: {
-            brand: { DEFAULT: '#C8202D', dark: '#9E1621' },
-            cream: '#FDF8F4',
-            warm: '#F0E6D6',
-            'warm-border': '#E7E0D8',
-          },
-        },
-      },
-    }
-  </script>
+  <script>try{var t=localStorage.getItem('cf_theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://thecookiefactory.co.za/"},
-      {"@type": "ListItem", "position": 2, "name": "About", "item": "https://thecookiefactory.co.za/about.html"}
-    ]
+    "@type": "Bakery",
+    "@id": "https://thecookiefactory.co.za/#business",
+    "name": "The Cookie Factory",
+    "image": "https://thecookiefactory.co.za/assets/images/og-share.jpg",
+    "url": "https://thecookiefactory.co.za/",
+    "telephone": "+27716737748",
+    "email": "orders@thecookiefactory.co.za",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "31 River Park, 77 De Waal Road",
+      "addressLocality": "Diep River",
+      "addressRegion": "Western Cape",
+      "postalCode": "7800",
+      "addressCountry": "ZA"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": -34.0361, "longitude": 18.4722 },
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "08:00", "closes": "17:00"
+    }],
+    "hasMap": "https://www.google.com/maps?q=31+River+Park,+77+De+Waal+Road,+Diep+River,+Cape+Town,+7800",
+    "sameAs": ["https://www.instagram.com/thecookiefactory.official/","https://www.facebook.com/cookiefactory204"]
   }
   </script>
 </head>
-<body class="font-sans antialiased text-gray-900 bg-white">
+<body>
+<a class="skip" href="#main">Skip to content</a>
 
-  <!-- Navigation -->
-  <nav id="nav" class="fixed inset-x-0 top-0 z-50">
-    <div class="max-w-7xl mx-auto px-6 lg:px-8 h-20 flex items-center justify-between">
-      <a href="index.html" class="flex-shrink-0">
-        <img src="assets/images/logo.png" alt="The Cookie Factory" class="h-11 w-11 rounded-full object-cover">
-      </a>
-      <ul class="hidden lg:flex items-center gap-1">
-        <li><a href="about.html" class="nav-link px-4 py-2 rounded-md">About</a></li>
-        <li><a href="index.html" class="nav-link px-4 py-2 rounded-md">Home</a></li>
-        <li><a href="products.html" class="nav-link px-4 py-2 rounded-md">Products</a></li>
-        <li><a href="where-to-buy.html" class="nav-link px-4 py-2 rounded-md">Where to Buy</a></li>
-        <li><a href="order.html" class="nav-link px-4 py-2 rounded-md">Order</a></li>
-        <li><a href="careers.html" class="nav-link px-4 py-2 rounded-md">Careers</a></li>
-        <li><a href="contact.html" class="nav-link px-4 py-2 rounded-md">Contact</a></li>
-      </ul>
-      <div class="flex items-center gap-3">
-        <a href="order.html" class="nav-cta hidden lg:inline-flex">Order Now</a>
-        <button id="burger" class="lg:hidden p-2 rounded cursor-pointer" aria-label="Open menu" aria-expanded="false">
-          <i data-lucide="menu" class="burger-icon w-6 h-6"></i>
-        </button>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Mobile Navigation -->
-  <div id="mobile-nav" class="fixed inset-x-0 z-40 bg-white border-b border-warm-border shadow-lg" style="top:80px;">
-    <div class="max-w-7xl mx-auto px-6 py-5">
-      <ul class="flex flex-col gap-0.5 mb-5">
-        <li><a href="about.html" class="block px-4 py-3 text-sm font-medium text-gray-600 hover:text-gray-900 hover:bg-cream rounded-md transition-colors">About</a></li>
-        <li><a href="index.html" class="block px-4 py-3 text-sm font-medium text-gray-600 hover:text-gray-900 hover:bg-cream rounded-md transition-colors">Home</a></li>
-        <li><a href="products.html" class="block px-4 py-3 text-sm font-medium text-gray-600 hover:text-gray-900 hover:bg-cream rounded-md transition-colors">Products</a></li>
-        <li><a href="where-to-buy.html" class="block px-4 py-3 text-sm font-medium text-gray-600 hover:text-gray-900 hover:bg-cream rounded-md transition-colors">Where to Buy</a></li>
-        <li><a href="order.html" class="block px-4 py-3 text-sm font-medium text-gray-600 hover:text-gray-900 hover:bg-cream rounded-md transition-colors">Order</a></li>
-        <li><a href="careers.html" class="block px-4 py-3 text-sm font-medium text-gray-600 hover:text-gray-900 hover:bg-cream rounded-md transition-colors">Careers</a></li>
-        <li><a href="contact.html" class="block px-4 py-3 text-sm font-medium text-gray-600 hover:text-gray-900 hover:bg-cream rounded-md transition-colors">Contact</a></li>
-      </ul>
-      <a href="order.html" class="flex justify-center w-full bg-brand hover:bg-brand-dark text-white text-xs font-semibold tracking-[0.1em] uppercase py-3.5 rounded transition-colors">Order Now</a>
+<nav class="nav" id="nav" aria-label="Primary">
+  <div class="wrap nav-in">
+    <a class="brandmark" href="index.html">
+      <img class="seal" src="assets/images/logo.png" alt="" width="240" height="240">
+      <span class="brandname">The Cookie Factory</span>
+    </a>
+    <ul class="navlinks">
+      <li><a class="navlink" href="about.html" data-nav="about.html">About</a></li>
+      <li><a class="navlink" href="index.html" data-nav="index.html">Home</a></li>
+      <li><a class="navlink" href="products.html" data-nav="products.html">Products</a></li>
+      <li><a class="navlink" href="where-to-buy.html" data-nav="where-to-buy.html">Where to Buy</a></li>
+      <li><a class="navlink" href="order.html" data-nav="order.html">Order</a></li>
+      <li><a class="navlink" href="careers.html" data-nav="careers.html">Careers</a></li>
+      <li><a class="navlink" href="contact.html" data-nav="contact.html">Contact</a></li>
+    </ul>
+    <div class="btn-row">
+      <a class="btn btn-primary btn-sm nav-cta" href="order.html">Order Now</a>
+      <button class="burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mnav">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
     </div>
   </div>
+</nav>
+<div class="mnav" id="mnav">
+  <ul>
+    <li><a href="about.html" data-nav="about.html">About</a></li>
+    <li><a href="index.html" data-nav="index.html">Home</a></li>
+    <li><a href="products.html" data-nav="products.html">Products</a></li>
+    <li><a href="where-to-buy.html" data-nav="where-to-buy.html">Where to Buy</a></li>
+    <li><a href="order.html" data-nav="order.html">Order</a></li>
+    <li><a href="careers.html" data-nav="careers.html">Careers</a></li>
+    <li><a href="contact.html" data-nav="contact.html">Contact</a></li>
+  </ul>
+</div>
 
-  <!-- Page Hero -->
-  <div class="pt-20 bg-cream">
-    <div class="max-w-7xl mx-auto px-6 lg:px-8 py-16 lg:py-20">
-      <div class="flex items-center gap-2 text-xs text-gray-400 mb-6">
-        <a href="index.html" class="hover:text-brand transition-colors">Home</a>
-        <i data-lucide="chevron-right" class="w-3 h-3"></i>
-        <span class="text-gray-600">About</span>
-      </div>
-      <h1 class="font-serif text-5xl lg:text-6xl text-gray-900 leading-tight mb-5">Our Story</h1>
-      <p class="text-gray-500 text-lg leading-relaxed max-w-2xl">Handcrafting home-style biscuits in Diep River, Cape Town since 2002 — the honest way, one batch at a time.</p>
-    </div>
-  </div>
+<main id="main">
+  <div class="banner"><div class="wrap">
+    <nav aria-label="Breadcrumb"><ol class="crumbs"><li><a href="index.html">Home</a></li><li aria-hidden="true">·</li><li aria-current="page">About</li></ol></nav>
+    <h1>Our Story</h1>
+    <p class="lede">Handcrafting home-style biscuits in Diep River, Cape Town since 2002 — the honest way, one batch at a time.</p>
+  </div></div>
 
-  <!-- Story Banner -->
-  <div class="relative h-72 lg:h-96 overflow-hidden">
-    <img src="assets/images/about-bakers.jpeg" alt="A baker at The Cookie Factory holding a tray of freshly baked biscuits" class="w-full h-full object-cover" style="object-position: 50% 12%;">
-    <div class="absolute inset-0 bg-gradient-to-t from-black/55 via-black/15 to-transparent"></div>
-    <div class="absolute bottom-0 left-0 right-0 p-8 lg:p-12">
-      <div class="max-w-7xl mx-auto">
-        <p class="text-white/85 font-serif text-2xl lg:text-3xl italic">"No two biscuits ever look exactly the same."</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- Story Body -->
-  <section class="py-20 lg:py-28">
-    <div class="max-w-3xl mx-auto px-6 lg:px-8">
-      <div class="space-y-6 text-gray-600 text-[17px] leading-relaxed fade-up">
-        <p>The Cookie Factory began in <span class="font-semibold text-gray-900">2002</span> with a simple belief: that good ingredients, proper recipes and real care make a better biscuit. More than twenty years later, that belief still shapes everything we do.</p>
-        <p>From our factory in <span class="font-semibold text-gray-900">Diep River, Cape Town</span>, our master bakers craft each range with stone-ground flour and quality ingredients you can taste in every bite. We bake in small, careful batches — which is exactly why no two of our biscuits ever look quite the same. We think that's the point.</p>
-        <p>Today we're a proud South African <span class="font-semibold text-gray-900">biscuit manufacturer</span>, supplying wholesale and bulk orders to retailers, cafés and convenience stores across the Western Cape and beyond — while still welcoming customers through the doors of our Diep River factory store, where the biscuits come straight off the line.</p>
+  <section class="sec">
+    <div class="wrap">
+      <div class="split split--wide">
+        <div class="rv stack" style="gap:1.3rem;">
+          <blockquote class="pull">&ldquo;No two biscuits ever look exactly the same.&rdquo;</blockquote>
+          <p class="body-copy">The Cookie Factory began in <b>2002</b> with a simple belief: that good ingredients, proper recipes and real care make a better biscuit. More than twenty years later, that belief still shapes everything we do.</p>
+          <p class="body-copy">From our factory in <b>Diep River, Cape Town</b>, our master bakers craft each range with stone-ground flour and quality ingredients you can taste in every bite. We bake in small, careful batches — which is exactly why no two of our biscuits ever look quite the same. We think that's the point.</p>
+          <p class="body-copy">Today we're a proud South African <b>biscuit manufacturer</b>, supplying wholesale and bulk orders to retailers, cafés and convenience stores across the Western Cape and beyond — while still welcoming customers through the doors of our Diep River factory store, where the biscuits come straight off the line.</p>
+        </div>
+        <div class="rv rv-d2"><figure class="plate"><picture>
+            <source srcset="assets/images/about-bakers.webp" type="image/webp">
+            <img src="assets/images/about-bakers.jpeg" alt="A baker at The Cookie Factory holding a tray of freshly baked biscuits" width="666" height="1000" loading="lazy" decoding="async">
+          </picture></figure></div>
       </div>
     </div>
   </section>
 
-  <!-- Values -->
-  <section class="pb-8 lg:pb-16">
-    <div class="max-w-7xl mx-auto px-6 lg:px-8">
-      <div class="grid sm:grid-cols-3 gap-6">
-        <div class="fade-up bg-cream rounded-xl border border-warm-border p-8">
-          <div class="w-12 h-12 rounded-lg bg-white border border-warm-border flex items-center justify-center mb-5">
-            <i data-lucide="hand-heart" class="w-5 h-5 text-brand"></i>
-          </div>
-          <h3 class="font-serif text-xl text-gray-900 mb-3">Handcrafted</h3>
-          <p class="text-gray-500 text-sm leading-relaxed">Small batches, real ingredients, and the hands of master bakers — never a shortcut.</p>
-        </div>
-        <div class="fade-up delay-1 bg-cream rounded-xl border border-warm-border p-8">
-          <div class="w-12 h-12 rounded-lg bg-white border border-warm-border flex items-center justify-center mb-5">
-            <i data-lucide="wheat" class="w-5 h-5 text-brand"></i>
-          </div>
-          <h3 class="font-serif text-xl text-gray-900 mb-3">Stone-Ground Flour</h3>
-          <p class="text-gray-500 text-sm leading-relaxed">We start with stone-ground flour for a home-style character you simply can't fake.</p>
-        </div>
-        <div class="fade-up delay-2 bg-cream rounded-xl border border-warm-border p-8">
-          <div class="w-12 h-12 rounded-lg bg-white border border-warm-border flex items-center justify-center mb-5">
-            <i data-lucide="badge-check" class="w-5 h-5 text-brand"></i>
-          </div>
-          <h3 class="font-serif text-xl text-gray-900 mb-3">Trusted Quality</h3>
-          <p class="text-gray-500 text-sm leading-relaxed">Halaal certified and baked in a HACCP food-safety audited facility, batch after batch.</p>
-        </div>
+  <section class="sec sec--raised">
+    <div class="wrap">
+      <div class="grid g3">
+        <div class="card rv"><div class="ic"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2 15 9l7 .5-5.5 4.5L18 21l-6-3.8L6 21l1.5-7L2 9.5 9 9z"/></svg></div><h2>Handcrafted</h2><p>Small batches, real ingredients, and the hands of master bakers — never a shortcut.</p></div>
+        <div class="card rv rv-d1"><div class="ic"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><h2>Stone-Ground Flour</h2><p>We start with stone-ground flour for a home-style character you simply can't fake.</p></div>
+        <div class="card rv rv-d2"><div class="ic"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2 4 5.5v6c0 5 3.4 9.3 8 10.5 4.6-1.2 8-5.5 8-10.5v-6z"/><path d="m9 12 2 2 4-4"/></svg></div><h2>Trusted Quality</h2><p>Halaal certified and baked in a HACCP food-safety audited facility, batch after batch.</p></div>
       </div>
     </div>
   </section>
 
-  <!-- Trust & Certifications -->
-  <section class="py-16 lg:py-20 bg-cream">
-    <div class="max-w-7xl mx-auto px-6 lg:px-8">
-      <div class="text-center max-w-2xl mx-auto mb-12 fade-up">
-        <p class="text-brand text-xs font-semibold tracking-[0.2em] uppercase mb-4">Quality You Can Trust</p>
-        <h2 class="font-serif text-3xl lg:text-4xl text-gray-900 leading-tight">Certified, audited, and made the honest way</h2>
-      </div>
-      <div class="grid grid-cols-2 lg:grid-cols-4 gap-5">
-        <div class="fade-up bg-white rounded-xl border border-warm-border p-7 text-center">
-          <div class="w-12 h-12 rounded-lg bg-cream border border-warm-border flex items-center justify-center mb-4 mx-auto">
-            <i data-lucide="badge-check" class="w-6 h-6 text-brand"></i>
-          </div>
-          <h3 class="font-serif text-lg text-gray-900 mb-1.5">Halaal Certified</h3>
-          <p class="text-gray-500 text-xs leading-relaxed">Certified by SANHA, the South African National Halaal Authority.</p>
-        </div>
-        <div class="fade-up delay-1 bg-white rounded-xl border border-warm-border p-7 text-center">
-          <div class="w-12 h-12 rounded-lg bg-cream border border-warm-border flex items-center justify-center mb-4 mx-auto">
-            <i data-lucide="shield-check" class="w-6 h-6 text-brand"></i>
-          </div>
-          <h3 class="font-serif text-lg text-gray-900 mb-1.5">HACCP Food-Safety</h3>
-          <p class="text-gray-500 text-xs leading-relaxed">Baked in a HACCP food-safety audited facility.</p>
-        </div>
-        <div class="fade-up delay-2 bg-white rounded-xl border border-warm-border p-7 text-center">
-          <div class="w-12 h-12 rounded-lg bg-cream border border-warm-border flex items-center justify-center mb-4 mx-auto">
-            <i data-lucide="wheat" class="w-6 h-6 text-brand"></i>
-          </div>
-          <h3 class="font-serif text-lg text-gray-900 mb-1.5">Stone-Ground Flour</h3>
-          <p class="text-gray-500 text-xs leading-relaxed">Real ingredients and stone-ground flour in every batch.</p>
-        </div>
-        <div class="fade-up delay-3 bg-white rounded-xl border border-warm-border p-7 text-center">
-          <div class="w-12 h-12 rounded-lg bg-cream border border-warm-border flex items-center justify-center mb-4 mx-auto">
-            <i data-lucide="recycle" class="w-6 h-6 text-brand"></i>
-          </div>
-          <h3 class="font-serif text-lg text-gray-900 mb-1.5">Recyclable Packaging</h3>
-          <p class="text-gray-500 text-xs leading-relaxed">Recyclable BOPP bags and corrugated boxes.</p>
-        </div>
+  <section class="sec">
+    <div class="wrap">
+      <div class="sec-head rv"><p class="label">Quality You Can Trust</p><h2 class="display">Certified, audited, and made the honest way.</h2></div>
+      <div class="grid g4">
+        <div class="card rv"><h3>Halaal Certified</h3><p>Certified by SANHA, the South African National Halaal Authority.</p></div>
+        <div class="card rv rv-d1"><h3>HACCP Food-Safety</h3><p>Baked in a HACCP food-safety audited facility.</p></div>
+        <div class="card rv rv-d2"><h3>Stone-Ground Flour</h3><p>Real ingredients and stone-ground flour in every batch.</p></div>
+        <div class="card rv rv-d3"><h3>Recyclable Packaging</h3><p>Recyclable BOPP bags and corrugated boxes.</p></div>
       </div>
     </div>
   </section>
 
-  <!-- CTA -->
-  <section class="bg-brand py-20">
-    <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center fade-up">
-      <h2 class="font-serif text-4xl lg:text-5xl text-white mb-5">Taste the difference</h2>
-      <p class="text-white/70 text-[15px] leading-relaxed mb-10 max-w-lg mx-auto">Browse our full range, find a stockist near you, or visit us at the factory store in Diep River.</p>
-      <div class="flex flex-wrap justify-center gap-4">
-        <a href="products.html" class="inline-flex items-center gap-2 bg-white hover:bg-gray-100 text-brand text-xs font-semibold tracking-[0.1em] uppercase px-8 py-4 rounded transition-colors cursor-pointer">
-          View Our Products
-          <i data-lucide="arrow-right" class="w-4 h-4"></i>
+  <section class="closer"><div class="wrap closer-in">
+    <div><h2>Taste the difference.</h2><p>Browse our full range, find a stockist near you, or visit us at the factory store in Diep River.</p></div>
+    <div class="btn-row"><a class="btn btn-light" href="products.html">View Our Products</a><a class="btn btn-ghost" href="where-to-buy.html">Where to Buy</a></div>
+  </div></section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brandmark" href="index.html" style="margin-bottom:1rem;">
+          <img class="seal" src="assets/images/logo.png" alt="" width="240" height="240">
+          <span class="brandname">The Cookie Factory</span>
         </a>
-        <a href="where-to-buy.html" class="inline-flex items-center gap-2 border border-white/40 hover:border-white/80 text-white text-xs font-semibold tracking-[0.1em] uppercase px-8 py-4 rounded transition-colors cursor-pointer">
-          Where to Buy
-        </a>
+        <p style="font-size:.86rem;max-width:30ch;">Handcrafted biscuits made with love since 2002. Quality you can taste in every bite.</p>
+        <div class="socials">
+          <a href="https://www.instagram.com/thecookiefactory.official/" target="_blank" rel="noopener" aria-label="The Cookie Factory on Instagram">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://www.facebook.com/cookiefactory204" target="_blank" rel="noopener" aria-label="The Cookie Factory on Facebook">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M15 3h-2.5A3.5 3.5 0 0 0 9 6.5V9H7v3h2v9h3v-9h2.5l.5-3H12V6.5a1 1 0 0 1 1-1h2z"/></svg>
+          </a>
+        </div>
+      </div>
+      <nav aria-labelledby="foot-nav">
+        <h2 id="foot-nav">Navigate</h2>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="where-to-buy.html">Where to Buy</a></li>
+          <li><a href="order.html">Order</a></li>
+          <li><a href="careers.html">Careers</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <nav aria-labelledby="foot-prod">
+        <h2 id="foot-prod">Products</h2>
+        <ul>
+          <li><a href="products.html#home-style">Home-Style Cookies</a></li>
+          <li><a href="products.html#luxury-creams">Luxury Creams</a></li>
+          <li><a href="products.html#mini-biscuits">Mini Biscuits</a></li>
+          <li><a href="products.html#assorted-bucket">Assorted Bucket</a></li>
+          <li><a href="products.html#value-packs">Value Packs</a></li>
+          <li><a href="products.html#in-store-exclusive">In-Store Exclusives</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h2>Contact</h2>
+        <ul>
+          <li>31 River Park, 77 De Waal Rd<br>Diep River, Cape Town, 7800</li>
+          <li>Mon–Fri: 8:00am – 5:00pm</li>
+          <li><a href="tel:+27716737748">+27 71 673 7748</a></li>
+          <li><a href="mailto:orders@thecookiefactory.co.za">orders@thecookiefactory.co.za</a></li>
+        </ul>
       </div>
     </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-[#0F172A] pt-16 pb-8">
-    <div class="max-w-7xl mx-auto px-6 lg:px-8">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-16 pb-12 border-b border-white/8">
-        <div>
-          <img src="assets/images/logo.png" alt="The Cookie Factory" loading="lazy" class="h-12 w-12 rounded-full object-cover mb-5">
-          <p class="text-white/45 text-sm leading-relaxed mb-7">Handcrafted biscuits made with love since 2002. Quality you can taste in every bite.</p>
-          <div class="flex gap-3">
-            <a href="https://www.instagram.com/thecookiefactory.official/" target="_blank" rel="noopener" aria-label="Instagram" class="w-9 h-9 rounded-lg bg-white/8 hover:bg-brand flex items-center justify-center transition-colors cursor-pointer">
-              <svg class="w-4 h-4 fill-white" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
-            </a>
-            <a href="https://www.facebook.com/cookiefactory204" target="_blank" rel="noopener" aria-label="Facebook" class="w-9 h-9 rounded-lg bg-white/8 hover:bg-brand flex items-center justify-center transition-colors cursor-pointer">
-              <svg class="w-4 h-4 fill-white" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-            </a>
-          </div>
-        </div>
-        <div>
-          <p class="text-white text-xs font-semibold tracking-[0.15em] uppercase mb-6">Navigate</p>
-          <ul class="space-y-3">
-            <li><a href="about.html" class="text-white/45 hover:text-white text-sm transition-colors">About</a></li>
-            <li><a href="index.html" class="text-white/45 hover:text-white text-sm transition-colors">Home</a></li>
-            <li><a href="products.html" class="text-white/45 hover:text-white text-sm transition-colors">Products</a></li>
-            <li><a href="where-to-buy.html" class="text-white/45 hover:text-white text-sm transition-colors">Where to Buy</a></li>
-            <li><a href="order.html" class="text-white/45 hover:text-white text-sm transition-colors">Place an Order</a></li>
-            <li><a href="careers.html" class="text-white/45 hover:text-white text-sm transition-colors">Careers</a></li>
-            <li><a href="contact.html" class="text-white/45 hover:text-white text-sm transition-colors">Contact Us</a></li>
-          </ul>
-        </div>
-        <div>
-          <p class="text-white text-xs font-semibold tracking-[0.15em] uppercase mb-6">Products</p>
-          <ul class="space-y-3">
-            <li><a href="products.html#home-style-cookies" class="text-white/45 hover:text-white text-sm transition-colors">Home-Style Cookies</a></li>
-            <li><a href="products.html#creamed-biscuits" class="text-white/45 hover:text-white text-sm transition-colors">Luxury Creams</a></li>
-            <li><a href="products.html#mini-biscuits" class="text-white/45 hover:text-white text-sm transition-colors">Mini Biscuits</a></li>
-            <li><a href="products.html#assorted-bucket" class="text-white/45 hover:text-white text-sm transition-colors">Assorted Bucket</a></li>
-            <li><a href="products.html#value-packs" class="text-white/45 hover:text-white text-sm transition-colors">Value Packs</a></li>
-          </ul>
-        </div>
-        <div>
-          <p class="text-white text-xs font-semibold tracking-[0.15em] uppercase mb-6">Contact</p>
-          <ul class="space-y-4">
-            <li class="flex items-start gap-3">
-              <i data-lucide="map-pin" class="w-4 h-4 text-white/30 flex-shrink-0 mt-0.5"></i>
-              <span class="text-white/45 text-sm leading-relaxed">31 River Park, 77 De Waal Rd<br>Diep River, Cape Town, 7800</span>
-            </li>
-            <li class="flex items-center gap-3">
-              <i data-lucide="clock" class="w-4 h-4 text-white/30 flex-shrink-0"></i>
-              <span class="text-white/45 text-sm">Mon–Fri: 8:00am – 5:00pm</span>
-            </li>
-            <li class="flex items-center gap-3">
-              <i data-lucide="message-circle" class="w-4 h-4 text-white/30 flex-shrink-0"></i>
-              <a href="https://wa.me/27716737748" target="_blank" rel="noopener" class="text-white/45 hover:text-white text-sm transition-colors">+27 71 673 7748</a>
-            </li>
-            <li class="flex items-center gap-3">
-              <i data-lucide="mail" class="w-4 h-4 text-white/30 flex-shrink-0"></i>
-              <a href="mailto:orders@thecookiefactory.co.za" class="text-white/45 hover:text-white text-sm transition-colors">orders@thecookiefactory.co.za</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="pt-7 flex flex-col sm:flex-row items-center justify-between gap-3 text-white/25 text-xs">
-        <p><span class="copyright-text">&copy; 2026 The Cookie Factory. All rights reserved.</span> <a href="secret-recipe.html" class="egg-crumb-link" rel="nofollow" aria-label="?">·</a></p>
-        <p>31 River Park, Diep River, Cape Town</p>
-      </div>
+    <div class="foot-base">
+      <p><button type="button" class="copyright-line">© 2026 The Cookie Factory. All rights reserved.</button></p>
+      <p>31 River Park, Diep River, Cape Town <a class="egg-crumb" href="secret-recipe.html" aria-label="A crumb">🍪</a></p>
     </div>
-  </footer>
+  </div>
+</footer>
 
-  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
-  <script src="js/main.js"></script>
-  <script>lucide.createIcons();</script>
+<button id="back-to-top" type="button" aria-label="Back to top">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+</button>
+<button class="tt" id="theme-toggle" type="button" aria-label="Switch colour theme">
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.4v2.2M12 19.4v2.2M4.2 4.2l1.6 1.6M18.2 18.2l1.6 1.6M2.4 12h2.2M19.4 12h2.2M4.2 19.8l1.6-1.6M18.2 5.8l1.6-1.6"/></svg>
+</button>
+
+<script src="js/main.js" defer></script>
 </body>
 </html>

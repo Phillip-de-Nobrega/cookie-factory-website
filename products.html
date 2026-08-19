@@ -8,351 +8,280 @@
     You found the crumbs behind the curtain too.
     We're hiring: thecookiefactory.co.za/careers.html
   -->
-
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Our Products — The Cookie Factory</title>
-  <meta name="description" content="The Cookie Factory full product range — home-style cookies, luxury creams, mini biscuits, assorted buckets and value packs. Handcrafted in Diep River, Cape Town.">
+  <meta name="description" content="The Cookie Factory full product range — home-style cookies, luxury creams, mini biscuits, assorted buckets and value packs, handcrafted in Diep River, Cape Town.">
   <link rel="canonical" href="https://thecookiefactory.co.za/products.html">
+  <meta name="theme-color" content="#C8202D">
+  <meta name="color-scheme" content="light dark">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://thecookiefactory.co.za/products.html">
   <meta property="og:title" content="Our Products — The Cookie Factory">
-  <meta property="og:description" content="The Cookie Factory full product range — home-style cookies, luxury creams, mini biscuits, assorted buckets and value packs. Handcrafted in Diep River, Cape Town.">
+  <meta property="og:description" content="The Cookie Factory full product range — home-style cookies, luxury creams, mini biscuits, assorted buckets and value packs, handcrafted in Diep River, Cape Town.">
   <meta property="og:image" content="https://thecookiefactory.co.za/assets/images/og-share.jpg">
   <meta property="og:site_name" content="The Cookie Factory">
   <meta property="og:locale" content="en_ZA">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Our Products — The Cookie Factory">
-  <meta name="twitter:description" content="The Cookie Factory full product range — home-style cookies, luxury creams, mini biscuits, assorted buckets and value packs. Handcrafted in Diep River, Cape Town.">
+  <meta name="twitter:description" content="The Cookie Factory full product range — home-style cookies, luxury creams, mini biscuits, assorted buckets and value packs, handcrafted in Diep River, Cape Town.">
   <meta name="twitter:image" content="https://thecookiefactory.co.za/assets/images/og-share.jpg">
   <link rel="icon" href="assets/images/logo.png">
+  <link rel="apple-touch-icon" href="assets/images/logo.png">
+  <link rel="preload" href="assets/fonts/karla.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/playfair-sc-700.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/styles.css">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        fontFamily: {
-          serif: ['"Playfair Display SC"', 'Georgia', 'serif'],
-          sans: ['Karla', 'system-ui', 'sans-serif'],
-        },
-        extend: {
-          colors: {
-            brand: { DEFAULT: '#C8202D', dark: '#9E1621' },
-            cream: '#FDF8F4',
-            warm: '#F0E6D6',
-            'warm-border': '#E7E0D8',
-          },
-        },
-      },
-    }
-  </script>
+  <script>try{var t=localStorage.getItem('cf_theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://thecookiefactory.co.za/"},
-      {"@type": "ListItem", "position": 2, "name": "Products", "item": "https://thecookiefactory.co.za/products.html"}
-    ]
+    "@type": "Bakery",
+    "@id": "https://thecookiefactory.co.za/#business",
+    "name": "The Cookie Factory",
+    "image": "https://thecookiefactory.co.za/assets/images/og-share.jpg",
+    "url": "https://thecookiefactory.co.za/",
+    "telephone": "+27716737748",
+    "email": "orders@thecookiefactory.co.za",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "31 River Park, 77 De Waal Road",
+      "addressLocality": "Diep River",
+      "addressRegion": "Western Cape",
+      "postalCode": "7800",
+      "addressCountry": "ZA"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": -34.0361, "longitude": 18.4722 },
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "08:00", "closes": "17:00"
+    }],
+    "hasMap": "https://www.google.com/maps?q=31+River+Park,+77+De+Waal+Road,+Diep+River,+Cape+Town,+7800",
+    "sameAs": ["https://www.instagram.com/thecookiefactory.official/","https://www.facebook.com/cookiefactory204"]
   }
   </script>
 </head>
-<body class="font-sans antialiased text-gray-900 bg-white">
+<body>
+<a class="skip" href="#main">Skip to content</a>
 
-  <!-- Navigation -->
-  <nav id="nav" class="fixed inset-x-0 top-0 z-50">
-    <div class="max-w-7xl mx-auto px-6 lg:px-8 h-20 flex items-center justify-between">
-      <a href="index.html" class="flex-shrink-0">
-        <img src="assets/images/logo.png" alt="The Cookie Factory" class="h-11 w-11 rounded-full object-cover">
-      </a>
-      <ul class="hidden lg:flex items-center gap-1">
-        <li><a href="about.html" class="nav-link px-4 py-2 rounded-md">About</a></li>
-        <li><a href="index.html" class="nav-link px-4 py-2 rounded-md">Home</a></li>
-        <li><a href="products.html" class="nav-link px-4 py-2 rounded-md">Products</a></li>
-        <li><a href="where-to-buy.html" class="nav-link px-4 py-2 rounded-md">Where to Buy</a></li>
-        <li><a href="order.html" class="nav-link px-4 py-2 rounded-md">Order</a></li>
-        <li><a href="careers.html" class="nav-link px-4 py-2 rounded-md">Careers</a></li>
-        <li><a href="contact.html" class="nav-link px-4 py-2 rounded-md">Contact</a></li>
-      </ul>
-      <div class="flex items-center gap-3">
-        <a href="order.html" class="nav-cta hidden lg:inline-flex">Order Now</a>
-        <button id="burger" class="lg:hidden p-2 rounded cursor-pointer" aria-label="Open menu" aria-expanded="false">
-          <i data-lucide="menu" class="burger-icon w-6 h-6"></i>
-        </button>
-      </div>
-    </div>
-  </nav>
-
-  <div id="mobile-nav" class="fixed inset-x-0 z-40 bg-white border-b border-warm-border shadow-lg" style="top:80px;">
-    <div class="max-w-7xl mx-auto px-6 py-5">
-      <ul class="flex flex-col gap-0.5 mb-5">
-        <li><a href="about.html" class="block px-4 py-3 text-sm font-medium text-gray-600 hover:text-gray-900 hover:bg-cream rounded-md transition-colors">About</a></li>
-        <li><a href="index.html" class="block px-4 py-3 text-sm font-medium text-gray-600 hover:text-gray-900 hover:bg-cream rounded-md transition-colors">Home</a></li>
-        <li><a href="products.html" class="block px-4 py-3 text-sm font-medium text-gray-600 hover:text-gray-900 hover:bg-cream rounded-md transition-colors">Products</a></li>
-        <li><a href="where-to-buy.html" class="block px-4 py-3 text-sm font-medium text-gray-600 hover:text-gray-900 hover:bg-cream rounded-md transition-colors">Where to Buy</a></li>
-        <li><a href="order.html" class="block px-4 py-3 text-sm font-medium text-gray-600 hover:text-gray-900 hover:bg-cream rounded-md transition-colors">Order</a></li>
-        <li><a href="careers.html" class="block px-4 py-3 text-sm font-medium text-gray-600 hover:text-gray-900 hover:bg-cream rounded-md transition-colors">Careers</a></li>
-        <li><a href="contact.html" class="block px-4 py-3 text-sm font-medium text-gray-600 hover:text-gray-900 hover:bg-cream rounded-md transition-colors">Contact</a></li>
-      </ul>
-      <a href="order.html" class="flex justify-center w-full bg-brand hover:bg-brand-dark text-white text-xs font-semibold tracking-[0.1em] uppercase py-3.5 rounded transition-colors">Order Now</a>
+<nav class="nav" id="nav" aria-label="Primary">
+  <div class="wrap nav-in">
+    <a class="brandmark" href="index.html">
+      <img class="seal" src="assets/images/logo.png" alt="" width="240" height="240">
+      <span class="brandname">The Cookie Factory</span>
+    </a>
+    <ul class="navlinks">
+      <li><a class="navlink" href="about.html" data-nav="about.html">About</a></li>
+      <li><a class="navlink" href="index.html" data-nav="index.html">Home</a></li>
+      <li><a class="navlink" href="products.html" data-nav="products.html">Products</a></li>
+      <li><a class="navlink" href="where-to-buy.html" data-nav="where-to-buy.html">Where to Buy</a></li>
+      <li><a class="navlink" href="order.html" data-nav="order.html">Order</a></li>
+      <li><a class="navlink" href="careers.html" data-nav="careers.html">Careers</a></li>
+      <li><a class="navlink" href="contact.html" data-nav="contact.html">Contact</a></li>
+    </ul>
+    <div class="btn-row">
+      <a class="btn btn-primary btn-sm nav-cta" href="order.html">Order Now</a>
+      <button class="burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mnav">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
     </div>
   </div>
+</nav>
+<div class="mnav" id="mnav">
+  <ul>
+    <li><a href="about.html" data-nav="about.html">About</a></li>
+    <li><a href="index.html" data-nav="index.html">Home</a></li>
+    <li><a href="products.html" data-nav="products.html">Products</a></li>
+    <li><a href="where-to-buy.html" data-nav="where-to-buy.html">Where to Buy</a></li>
+    <li><a href="order.html" data-nav="order.html">Order</a></li>
+    <li><a href="careers.html" data-nav="careers.html">Careers</a></li>
+    <li><a href="contact.html" data-nav="contact.html">Contact</a></li>
+  </ul>
+</div>
 
-  <!-- Page Hero -->
-  <div class="pt-20 bg-cream border-b border-warm-border">
-    <div class="max-w-7xl mx-auto px-6 lg:px-8 py-16 lg:py-20">
-      <div class="flex items-center gap-2 text-xs text-gray-400 mb-6">
-        <a href="index.html" class="hover:text-brand transition-colors">Home</a>
-        <i data-lucide="chevron-right" class="w-3 h-3"></i>
-        <span class="text-gray-600">Products</span>
+<main id="main">
+  <div class="banner"><div class="wrap">
+    <nav aria-label="Breadcrumb"><ol class="crumbs"><li><a href="index.html">Home</a></li><li aria-hidden="true">·</li><li aria-current="page">Products</li></ol></nav>
+    <h1>Our Product Range</h1>
+    <p class="lede">Handcrafted biscuits in a wide range of flavours and sizes — all made fresh at our Diep River factory. Visit our factory store or <a href="order.html">place an order</a> to enquire about pricing.</p>
+  </div></div>
+
+  <section class="sec"><div class="wrap stack" style="gap:clamp(1.5rem,3vw,2.4rem);">
+
+    <article class="cat rv" id="home-style"><div class="cat-grid">
+      <div class="cat-media"><picture>
+            <source srcset="assets/images/product-ginger.webp" type="image/webp">
+            <img src="assets/images/product-ginger.jpeg" alt="Home-style ginger cookies in a wire basket" width="676" height="900" loading="lazy" decoding="async">
+          </picture></div>
+      <div class="cat-body">
+        <p class="cat-no">Category 01</p>
+        <h2>Home-Style Cookies</h2>
+        <p class="body-copy">Our signature range of home-style baked cookies, made with stone-ground flour. Imperfectly perfect — just like home baking should be.</p>
+        <ul class="flavours"><li class="chip chip-b">Ginger</li><li class="chip chip-b">Shortbread</li><li class="chip chip-b">Choc Chip</li><li class="chip chip-b">Oaties</li><li class="chip chip-b">Crunchies</li><li class="chip chip-b">Coconut</li><li class="chip chip-b">Assorted</li><li class="chip chip-b">Caramel Choc Chip</li><li class="chip chip-b">Double Choc Chip</li></ul>
+        <div class="sizes" id="in-store-exclusive"><b>In-store exclusive</b><span class="chip chip-b">Double Ginger</span><span class="chip chip-b">Cranberry &amp; White Chocolate</span></div>
+        <div class="sizes"><b>Sizes</b><span class="chip">200g</span><span class="chip">400g</span><span class="chip">800g</span></div>
+        
+        <p class="note">Available in single packs and mixed boxes. In-store exclusives are available at the Diep River factory store only. Contact us for pricing.</p>
       </div>
-      <h1 class="font-serif text-5xl lg:text-6xl text-gray-900 leading-tight mb-5">Our Product Range</h1>
-      <p class="text-gray-500 text-lg leading-relaxed max-w-2xl">Handcrafted biscuits in a wide range of flavours and sizes — all made fresh at our Diep River factory. Visit our factory store or <a href="order.html" class="text-brand hover:underline font-medium">place an order</a> to enquire about pricing.</p>
-    </div>
-  </div>
+    </div></article>
 
-  <!-- Products -->
-  <section class="py-20 lg:py-28">
-    <div class="max-w-7xl mx-auto px-6 lg:px-8">
-
-      <!-- Category 1: Cookies -->
-      <div id="home-style-cookies" class="mb-24 fade-up">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center mb-12 pb-12 border-b border-warm-border">
-          <div>
-            <p class="text-brand text-xs font-semibold tracking-[0.18em] uppercase mb-4">Category 01</p>
-            <h2 class="font-serif text-4xl text-gray-900 mb-5 leading-tight">Home-Style Cookies</h2>
-            <p class="text-gray-500 text-[15px] leading-relaxed mb-7">Our signature range of home-style baked cookies, made with stone ground flour. Imperfectly perfect — just like home baking should be.</p>
-            <div class="flex flex-wrap gap-2">
-              <span class="text-xs font-medium text-gray-500 bg-warm px-3 py-1.5 rounded-full border border-warm-border">Ginger</span>
-              <span class="text-xs font-medium text-gray-500 bg-warm px-3 py-1.5 rounded-full border border-warm-border">Shortbread</span>
-              <span class="text-xs font-medium text-gray-500 bg-warm px-3 py-1.5 rounded-full border border-warm-border">Choc Chip</span>
-              <span class="text-xs font-medium text-gray-500 bg-warm px-3 py-1.5 rounded-full border border-warm-border">Oaties</span>
-              <span class="text-xs font-medium text-gray-500 bg-warm px-3 py-1.5 rounded-full border border-warm-border">Crunchies</span>
-              <span class="text-xs font-medium text-gray-500 bg-warm px-3 py-1.5 rounded-full border border-warm-border">Coconut</span>
-              <span class="text-xs font-medium text-gray-500 bg-warm px-3 py-1.5 rounded-full border border-warm-border">Assorted</span>
-              <span class="text-xs font-medium text-gray-500 bg-warm px-3 py-1.5 rounded-full border border-warm-border">Caramel Choc Chip</span>
-              <span class="text-xs font-medium text-gray-500 bg-warm px-3 py-1.5 rounded-full border border-warm-border">Double Choc Chip</span>
-            </div>
-          </div>
-          <div class="rounded-lg overflow-hidden aspect-[16/10]">
-            <img src="assets/images/product-ginger.jpeg" alt="Home-style ginger cookies" loading="lazy" class="w-full h-full object-cover">
-          </div>
-        </div>
-        <div class="flex flex-wrap gap-2 pt-2">
-          <span class="text-xs font-medium text-gray-500 bg-warm px-3 py-1.5 rounded-full border border-warm-border">200g</span>
-          <span class="text-xs font-medium text-gray-500 bg-warm px-3 py-1.5 rounded-full border border-warm-border">400g</span>
-          <span class="text-xs font-medium text-gray-500 bg-warm px-3 py-1.5 rounded-full border border-warm-border">800g</span>
-        </div>
-        <p class="text-gray-400 text-sm mt-5">Available in single packs and mixed boxes. <a href="order.html" class="text-brand hover:underline">Contact us for pricing.</a></p>
+    <article class="cat cat--flip rv" id="luxury-creams"><div class="cat-grid">
+      <div class="cat-media"><picture>
+            <source srcset="assets/images/product-choc-cream.webp" type="image/webp">
+            <img src="assets/images/product-choc-cream.jpeg" alt="Chocolate cream biscuits served beside a cup of coffee" width="677" height="900" loading="lazy" decoding="async">
+          </picture></div>
+      <div class="cat-body">
+        <p class="cat-no">Category 02</p>
+        <h2>Luxury Creams</h2>
+        <p class="body-copy">Indulgent cream-filled biscuits that are impossible to put down. Our Chocolate Creams are particularly popular — rich and perfectly paired with coffee.</p>
+        <ul class="flavours"><li class="chip chip-b">Chocolate Cream</li><li class="chip chip-b">Yoghurt Cream</li><li class="chip chip-b">Cappuccino Cream</li><li class="chip chip-b">Lemon Cream</li></ul>
+        
+        <div class="sizes"><b>Sizes</b><span class="chip">200g</span><span class="chip">400g</span><span class="chip">800g (Choc Creams)</span></div>
+        
+        <p class="note">Available in single packs and mixed boxes. Contact us for pricing.</p>
       </div>
+    </div></article>
 
-      <!-- Category 2: Luxury Creams -->
-      <div id="creamed-biscuits" class="mb-24 bg-cream rounded-xl p-10 fade-up">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center mb-12 pb-12 border-b border-warm-border">
-          <div class="order-2 lg:order-1 rounded-lg overflow-hidden aspect-[16/10]">
-            <img src="assets/images/product-choc-cream.jpeg" alt="Chocolate cream biscuits" loading="lazy" class="w-full h-full object-cover">
-          </div>
-          <div class="order-1 lg:order-2">
-            <p class="text-brand text-xs font-semibold tracking-[0.18em] uppercase mb-4">Category 02</p>
-            <h2 class="font-serif text-4xl text-gray-900 mb-5 leading-tight">Luxury Creams</h2>
-            <p class="text-gray-500 text-[15px] leading-relaxed mb-7">Indulgent cream-filled biscuits that are impossible to put down. Our Chocolate Creams are particularly popular — rich and perfectly paired with coffee.</p>
-            <div class="flex flex-wrap gap-2">
-              <span class="text-xs font-medium text-gray-500 bg-white px-3 py-1.5 rounded-full border border-warm-border">Chocolate Cream</span>
-              <span class="text-xs font-medium text-gray-500 bg-white px-3 py-1.5 rounded-full border border-warm-border">Yoghurt Cream</span>
-              <span class="text-xs font-medium text-gray-500 bg-white px-3 py-1.5 rounded-full border border-warm-border">Cappuccino Cream</span>
-              <span class="text-xs font-medium text-gray-500 bg-white px-3 py-1.5 rounded-full border border-warm-border">Lemon Cream</span>
-            </div>
-          </div>
-        </div>
-        <div class="flex flex-wrap gap-2 pt-2">
-          <span class="text-xs font-medium text-gray-500 bg-white px-3 py-1.5 rounded-full border border-warm-border">200g</span>
-          <span class="text-xs font-medium text-gray-500 bg-white px-3 py-1.5 rounded-full border border-warm-border">400g</span>
-          <span class="text-xs font-medium text-gray-500 bg-white px-3 py-1.5 rounded-full border border-warm-border">800g (Choc Creams)</span>
-        </div>
-        <p class="text-gray-400 text-sm mt-5">Available in single packs and mixed boxes. <a href="order.html" class="text-brand hover:underline">Contact us for pricing.</a></p>
+    <article class="cat rv" id="mini-biscuits"><div class="cat-grid">
+      <div class="cat-media"><picture>
+            <source srcset="assets/images/product-mini-biscuits.webp" type="image/webp">
+            <img src="assets/images/product-mini-biscuits.jpeg" alt="Mini biscuit strips in a glass jar" width="724" height="900" loading="lazy" decoding="async">
+          </picture></div>
+      <div class="cat-body">
+        <p class="cat-no">Category 03</p>
+        <h2>Mini Biscuits</h2>
+        <p class="body-copy">All the great taste of our cookies in a perfectly portioned snack size. Ideal for lunchboxes, events and on-the-go snacking.</p>
+        <ul class="flavours"><li class="chip chip-b">Choc Chip Shortbread</li><li class="chip chip-b">Mini Ginger</li><li class="chip chip-b">Oat Crunchies</li><li class="chip chip-b">Double Choc Chip</li></ul>
+        
+        <div class="sizes"><b>Two sizes</b><span class="chip">Strip &mdash; 5 &times; 35g</span><span class="chip">Singles &mdash; 35g</span></div>
+        
+        <p class="note">Contact us for pricing.</p>
       </div>
+    </div></article>
 
-      <!-- Category 3: Mini Biscuits -->
-      <div id="mini-biscuits" class="mb-24 fade-up">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center mb-12 pb-12 border-b border-warm-border">
-          <div>
-            <p class="text-brand text-xs font-semibold tracking-[0.18em] uppercase mb-4">Category 03</p>
-            <h2 class="font-serif text-4xl text-gray-900 mb-5 leading-tight">Mini Biscuits</h2>
-            <p class="text-gray-500 text-[15px] leading-relaxed mb-7">All the great taste of our cookies in a perfectly portioned snack size. Ideal for lunchboxes, events and on-the-go snacking.</p>
-            <div class="flex flex-wrap gap-2">
-              <span class="text-xs font-medium text-gray-500 bg-warm px-3 py-1.5 rounded-full border border-warm-border">Choc Chip Shortbread</span>
-              <span class="text-xs font-medium text-gray-500 bg-warm px-3 py-1.5 rounded-full border border-warm-border">Mini Ginger</span>
-              <span class="text-xs font-medium text-gray-500 bg-warm px-3 py-1.5 rounded-full border border-warm-border">Oat Crunchies</span>
-              <span class="text-xs font-medium text-gray-500 bg-warm px-3 py-1.5 rounded-full border border-warm-border">Double Choc Chip</span>
-            </div>
-          </div>
-          <div class="rounded-lg overflow-hidden aspect-[16/10] bg-[#F5F3F0] flex items-center justify-center">
-            <img src="assets/images/product-mini-biscuits.jpeg" alt="Mini biscuit strips in a jar" loading="lazy" class="w-full h-full object-contain">
-          </div>
-        </div>
-        <div class="bg-cream rounded-xl border border-warm-border p-8 lg:p-10">
-          <p class="text-xs font-semibold text-gray-400 tracking-[0.15em] uppercase mb-6">Available in Two Sizes</p>
-          <div class="flex flex-wrap gap-3">
-            <div class="bg-white border border-warm-border rounded-lg px-6 py-4">
-              <p class="text-brand text-xs font-semibold tracking-[0.14em] uppercase mb-1">Strip</p>
-              <p class="text-gray-700 text-sm font-medium">5 &times; 35g</p>
-            </div>
-            <div class="bg-white border border-warm-border rounded-lg px-6 py-4">
-              <p class="text-brand text-xs font-semibold tracking-[0.14em] uppercase mb-1">Singles</p>
-              <p class="text-gray-700 text-sm font-medium">35g</p>
-            </div>
-          </div>
-          <p class="text-gray-400 text-sm mt-5"><a href="order.html" class="text-brand hover:underline">Contact us for pricing.</a></p>
-        </div>
+    <article class="cat cat--flip rv" id="assorted-bucket"><div class="cat-grid">
+      <div class="cat-media"><picture>
+            <source srcset="assets/images/gift-tin.webp" type="image/webp">
+            <img src="assets/images/gift-tin.jpeg" alt="A Cookie Factory gift selection tin tied with a red ribbon" width="1100" height="705" loading="lazy" decoding="async">
+          </picture></div>
+      <div class="cat-body">
+        <p class="cat-no">Category 04</p>
+        <h2>Assorted Biscuit Bucket</h2>
+        <p class="body-copy">Our most loved gifting option — a generous 1.5kg bucket packed with a handpicked selection of our finest biscuits. Perfect for corporate gifts, events, or treating someone special.</p>
+        <ul class="flavours"><li class="chip chip-b">Ginger</li><li class="chip chip-b">Shortbread</li><li class="chip chip-b">Oaties</li><li class="chip chip-b">Crunchies</li><li class="chip chip-b">Coconut</li><li class="chip chip-b">Chocolate</li></ul>
+        
+        <div class="sizes"><b>Size</b><span class="chip">1.5kg bucket</span></div>
+        <p><a class="btn btn-primary" href="order.html">Enquire Now</a></p>
+        <p class="note">The perfect gift — ideal for corporate orders and events.</p>
       </div>
+    </div></article>
 
-      <!-- Category 4: Assorted Bucket -->
-      <div id="assorted-bucket" class="mb-24 fade-up">
-        <p class="text-brand text-xs font-semibold tracking-[0.18em] uppercase mb-8">Category 04</p>
-        <div class="grid grid-cols-1 lg:grid-cols-[220px_1fr_260px] gap-8 bg-cream rounded-xl p-10 border border-warm-border items-start">
-          <div class="rounded-xl overflow-hidden border border-warm-border bg-white">
-            <img src="assets/images/product-assorted-bucket.png" alt="The Cookie Factory Assorted Biscuit Bucket" loading="lazy" class="w-full h-full object-contain p-4">
-          </div>
-          <div>
-            <h2 class="font-serif text-4xl text-gray-900 mb-5 leading-tight">Assorted Biscuit Bucket</h2>
-            <p class="text-gray-500 text-[15px] leading-relaxed mb-7 max-w-xl">Our most loved gifting option — a generous 1.5kg bucket packed with a handpicked selection of our finest biscuits. Perfect for corporate gifts, events, or treating someone special.</p>
-            <div class="flex flex-wrap gap-2">
-              <span class="text-xs font-medium text-gray-500 bg-white px-3 py-1.5 rounded-full border border-warm-border">Ginger</span>
-              <span class="text-xs font-medium text-gray-500 bg-white px-3 py-1.5 rounded-full border border-warm-border">Shortbread</span>
-              <span class="text-xs font-medium text-gray-500 bg-white px-3 py-1.5 rounded-full border border-warm-border">Oaties</span>
-              <span class="text-xs font-medium text-gray-500 bg-white px-3 py-1.5 rounded-full border border-warm-border">Crunchies</span>
-              <span class="text-xs font-medium text-gray-500 bg-white px-3 py-1.5 rounded-full border border-warm-border">Coconut</span>
-              <span class="text-xs font-medium text-gray-500 bg-white px-3 py-1.5 rounded-full border border-warm-border">Chocolate Biscuits</span>
-            </div>
-          </div>
-          <div class="bg-white rounded-lg p-8 text-center border border-warm-border self-start">
-            <p class="text-gray-500 text-sm leading-relaxed mb-4">The perfect gift — ideal for corporate orders and events.</p>
-            <a href="order.html" class="inline-flex items-center gap-2 bg-brand hover:bg-brand-dark text-white text-xs font-semibold tracking-[0.1em] uppercase px-6 py-3 rounded transition-colors">
-              Enquire Now
-            </a>
-          </div>
+    <article class="cat rv" id="value-packs"><div class="cat-body">
+      <p class="cat-no">Category 05</p>
+      <h2>Value Packs &amp; Specials</h2>
+      <p class="body-copy">Great-value options — perfect for bulk buying, baking, or everyday snacking.</p>
+      <div class="grid g3" style="margin-top:.5rem;">
+        <div class="card"><h3>Broken Biscuits</h3><p>800g of our classic biscuits — imperfect shapes, perfect taste. Ideal for baking, crumbling over desserts or everyday snacking.</p></div>
+        <div class="card"><h3>Sweet Crumbs</h3><p>1.4kg of biscuit crumbs — perfect for cheesecake bases, toppings and all your baking needs. An incredibly versatile pantry staple.</p></div>
+        <div class="card"><h3>Crunchie Bar</h3><p>Our beloved Crunchie Bar — a satisfying, crunchy treat that has been a factory favourite for years. Great as a quick snack.</p></div>
+      </div>
+      <p class="note">Contact us for pricing on all value packs.</p>
+    </div></article>
+
+  </div></section>
+
+  <section class="sec sec--ink">
+    <div class="wrap">
+      <div class="split split--wide">
+        <div class="rv stack" style="gap:1.2rem;">
+          <p class="label">Trade Information</p>
+          <h2 class="display">Product &amp; trade information.</h2>
+          <p class="body-copy">Every product is <b>Halaal certified</b> and baked at our <b>HACCP food-safety audited</b> Diep River factory, to the same standard batch after batch. All products carry a 12-month shelf life in recyclable packaging.</p>
+          <p class="body-copy"><b>Allergens:</b> all our biscuits contain Wheat, Gluten, Soya and Cow's milk. Full ingredients, nutrition and pack/case specifications are in our trade catalogue.</p>
+          <p><a class="btn btn-primary" href="assets/docs/the-cookie-factory-catalogue.pdf" target="_blank" rel="noopener">Download Catalogue (PDF)</a></p>
+          <p class="note">Full range &middot; specs &amp; allergens &middot; no pricing</p>
+        </div>
+        <div class="rv rv-d2 grid g2">
+          <div class="card"><h3>Halaal Certified</h3><p>SANHA certified.</p></div>
+          <div class="card"><h3>HACCP Audited</h3><p>Food-safety audited facility.</p></div>
+          <div class="card"><h3>12-Month Shelf Life</h3><p>Consistent batch after batch.</p></div>
+          <div class="card"><h3>Recyclable Packaging</h3><p>BOPP bags &amp; corrugated boxes.</p></div>
         </div>
       </div>
-
-      <!-- Category 5: Value Packs -->
-      <div id="value-packs" class="fade-up">
-        <p class="text-brand text-xs font-semibold tracking-[0.18em] uppercase mb-4">Category 05</p>
-        <h2 class="font-serif text-4xl text-gray-900 mb-3 leading-tight">Value Packs &amp; Specials</h2>
-        <p class="text-gray-500 text-[15px] leading-relaxed mb-10 max-w-xl">Great-value options — perfect for bulk buying, baking, or everyday snacking.</p>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
-          <div class="bg-gray-900 rounded-lg p-8">
-            <h3 class="font-serif text-2xl text-white mb-3">Broken Biscuits</h3>
-            <p class="text-white/50 text-sm leading-relaxed">800g of our classic biscuits — imperfect shapes, perfect taste. Ideal for baking, crumbling over desserts or everyday snacking.</p>
-          </div>
-          <div class="bg-gray-900 rounded-lg p-8">
-            <h3 class="font-serif text-2xl text-white mb-3">Sweet Crumbs</h3>
-            <p class="text-white/50 text-sm leading-relaxed">1.4kg of biscuit crumbs — perfect for cheesecake bases, toppings and all your baking needs. An incredibly versatile pantry staple.</p>
-          </div>
-          <div class="bg-gray-900 rounded-lg p-8">
-            <h3 class="font-serif text-2xl text-white mb-3">Crunchie Bar</h3>
-            <p class="text-white/50 text-sm leading-relaxed">Our beloved Crunchie Bar — a satisfying, crunchy treat that has been a factory favourite for years. Great as a quick snack.</p>
-          </div>
-        </div>
-        <p class="text-gray-400 text-sm mt-6"><a href="order.html" class="text-brand hover:underline">Contact us for pricing on all value packs.</a></p>
-      </div>
-
     </div>
   </section>
 
-  <!-- Trade & Product Info -->
-  <section class="border-t border-warm-border bg-cream">
-    <div class="max-w-7xl mx-auto px-6 lg:px-8 py-14 lg:py-16">
-      <div class="grid lg:grid-cols-[1fr_auto] gap-8 lg:gap-12 lg:items-center">
-        <div class="fade-up">
-          <p class="text-brand text-xs font-semibold tracking-[0.18em] uppercase mb-3">Product &amp; Trade Information</p>
-          <p class="text-gray-600 text-[15px] leading-relaxed mb-4 max-w-2xl">Every product is <span class="font-semibold text-gray-800">Halaal certified</span> and baked at our <span class="font-semibold text-gray-800">HACCP food-safety audited</span> Diep River factory, to the same standard batch after batch. All products carry a 12-month shelf life in recyclable packaging.</p>
-          <p class="text-gray-500 text-sm leading-relaxed max-w-2xl"><span class="font-semibold text-gray-700">Allergens:</span> all our biscuits contain Wheat, Gluten, Soya and Cow's milk. Full ingredients, nutrition and pack/case specifications are in our trade catalogue.</p>
-        </div>
-        <div class="flex-shrink-0 fade-up delay-1">
-          <a href="assets/docs/the-cookie-factory-catalogue.pdf" target="_blank" rel="noopener" class="inline-flex items-center gap-2.5 bg-brand hover:bg-brand-dark text-white text-xs font-semibold tracking-[0.1em] uppercase px-7 py-4 rounded transition-colors">
-            <i data-lucide="download" class="w-4 h-4"></i>
-            Download Catalogue (PDF)
+  <section class="closer"><div class="wrap closer-in">
+    <div><h2>Ready to place an order?</h2><p>Send us your order request and we'll get back to you with availability and pricing. Delivery available at buyer's expense via courier.</p></div>
+    <div class="btn-row"><a class="btn btn-light" href="order.html">Place an Order</a><a class="btn btn-ghost" href="contact.html">Contact Us</a></div>
+  </div></section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brandmark" href="index.html" style="margin-bottom:1rem;">
+          <img class="seal" src="assets/images/logo.png" alt="" width="240" height="240">
+          <span class="brandname">The Cookie Factory</span>
+        </a>
+        <p style="font-size:.86rem;max-width:30ch;">Handcrafted biscuits made with love since 2002. Quality you can taste in every bite.</p>
+        <div class="socials">
+          <a href="https://www.instagram.com/thecookiefactory.official/" target="_blank" rel="noopener" aria-label="The Cookie Factory on Instagram">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
           </a>
-          <p class="text-gray-400 text-xs mt-3 text-center lg:text-left">Full range &middot; specs &amp; allergens &middot; no pricing</p>
+          <a href="https://www.facebook.com/cookiefactory204" target="_blank" rel="noopener" aria-label="The Cookie Factory on Facebook">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M15 3h-2.5A3.5 3.5 0 0 0 9 6.5V9H7v3h2v9h3v-9h2.5l.5-3H12V6.5a1 1 0 0 1 1-1h2z"/></svg>
+          </a>
         </div>
+      </div>
+      <nav aria-labelledby="foot-nav">
+        <h2 id="foot-nav">Navigate</h2>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="where-to-buy.html">Where to Buy</a></li>
+          <li><a href="order.html">Order</a></li>
+          <li><a href="careers.html">Careers</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <nav aria-labelledby="foot-prod">
+        <h2 id="foot-prod">Products</h2>
+        <ul>
+          <li><a href="products.html#home-style">Home-Style Cookies</a></li>
+          <li><a href="products.html#luxury-creams">Luxury Creams</a></li>
+          <li><a href="products.html#mini-biscuits">Mini Biscuits</a></li>
+          <li><a href="products.html#assorted-bucket">Assorted Bucket</a></li>
+          <li><a href="products.html#value-packs">Value Packs</a></li>
+          <li><a href="products.html#in-store-exclusive">In-Store Exclusives</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h2>Contact</h2>
+        <ul>
+          <li>31 River Park, 77 De Waal Rd<br>Diep River, Cape Town, 7800</li>
+          <li>Mon–Fri: 8:00am – 5:00pm</li>
+          <li><a href="tel:+27716737748">+27 71 673 7748</a></li>
+          <li><a href="mailto:orders@thecookiefactory.co.za">orders@thecookiefactory.co.za</a></li>
+        </ul>
       </div>
     </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="bg-brand py-20">
-    <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center fade-up">
-      <h2 class="font-serif text-4xl lg:text-5xl text-white mb-5">Ready to place an order?</h2>
-      <p class="text-white/70 text-[15px] leading-relaxed mb-10 max-w-lg mx-auto">Send us your order request and we'll get back to you with availability and pricing. Delivery available at buyer's expense via courier.</p>
-      <div class="flex flex-wrap justify-center gap-4">
-        <a href="order.html" class="inline-flex items-center gap-2 bg-white hover:bg-gray-100 text-brand text-xs font-semibold tracking-[0.1em] uppercase px-8 py-4 rounded transition-colors cursor-pointer">
-          Place an Order
-          <i data-lucide="arrow-right" class="w-4 h-4"></i>
-        </a>
-        <a href="contact.html" class="inline-flex items-center gap-2 border border-white/40 hover:border-white/80 text-white text-xs font-semibold tracking-[0.1em] uppercase px-8 py-4 rounded transition-colors cursor-pointer">
-          Contact Us
-        </a>
-      </div>
+    <div class="foot-base">
+      <p><button type="button" class="copyright-line">© 2026 The Cookie Factory. All rights reserved.</button></p>
+      <p>31 River Park, Diep River, Cape Town <a class="egg-crumb" href="secret-recipe.html" aria-label="A crumb">🍪</a></p>
     </div>
-  </section>
+  </div>
+</footer>
 
-  <!-- Footer -->
-  <footer class="bg-[#0F172A] pt-16 pb-8">
-    <div class="max-w-7xl mx-auto px-6 lg:px-8">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-16 pb-12 border-b border-white/8">
-        <div>
-          <img src="assets/images/logo.png" alt="The Cookie Factory" loading="lazy" class="h-12 w-12 rounded-full object-cover mb-5">
-          <p class="text-white/45 text-sm leading-relaxed mb-7">Handcrafted biscuits made with love since 2002. Quality you can taste in every bite.</p>
-          <div class="flex gap-3">
-            <a href="https://www.instagram.com/thecookiefactory.official/" target="_blank" rel="noopener" aria-label="Instagram" class="w-9 h-9 rounded-lg bg-white/8 hover:bg-brand flex items-center justify-center transition-colors cursor-pointer">
-              <svg class="w-4 h-4 fill-white" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
-            </a>
-            <a href="https://www.facebook.com/cookiefactory204" target="_blank" rel="noopener" aria-label="Facebook" class="w-9 h-9 rounded-lg bg-white/8 hover:bg-brand flex items-center justify-center transition-colors cursor-pointer">
-              <svg class="w-4 h-4 fill-white" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-            </a>
-          </div>
-        </div>
-        <div>
-          <p class="text-white text-xs font-semibold tracking-[0.15em] uppercase mb-6">Navigate</p>
-          <ul class="space-y-3">
-            <li><a href="about.html" class="text-white/45 hover:text-white text-sm transition-colors">About</a></li>
-            <li><a href="index.html" class="text-white/45 hover:text-white text-sm transition-colors">Home</a></li>
-            <li><a href="products.html" class="text-white/45 hover:text-white text-sm transition-colors">Products</a></li>
-            <li><a href="where-to-buy.html" class="text-white/45 hover:text-white text-sm transition-colors">Where to Buy</a></li>
-            <li><a href="order.html" class="text-white/45 hover:text-white text-sm transition-colors">Place an Order</a></li>
-            <li><a href="careers.html" class="text-white/45 hover:text-white text-sm transition-colors">Careers</a></li>
-            <li><a href="contact.html" class="text-white/45 hover:text-white text-sm transition-colors">Contact Us</a></li>
-          </ul>
-        </div>
-        <div>
-          <p class="text-white text-xs font-semibold tracking-[0.15em] uppercase mb-6">Products</p>
-          <ul class="space-y-3">
-            <li><a href="products.html#home-style-cookies" class="text-white/45 hover:text-white text-sm transition-colors">Home-Style Cookies</a></li>
-            <li><a href="products.html#creamed-biscuits" class="text-white/45 hover:text-white text-sm transition-colors">Luxury Creams</a></li>
-            <li><a href="products.html#mini-biscuits" class="text-white/45 hover:text-white text-sm transition-colors">Mini Biscuits</a></li>
-            <li><a href="products.html#assorted-bucket" class="text-white/45 hover:text-white text-sm transition-colors">Assorted Bucket</a></li>
-            <li><a href="products.html#value-packs" class="text-white/45 hover:text-white text-sm transition-colors">Value Packs</a></li>
-          </ul>
-        </div>
-        <div>
-          <p class="text-white text-xs font-semibold tracking-[0.15em] uppercase mb-6">Contact</p>
-          <ul class="space-y-4">
-            <li class="flex items-start gap-3"><i data-lucide="map-pin" class="w-4 h-4 text-white/30 flex-shrink-0 mt-0.5"></i><span class="text-white/45 text-sm leading-relaxed">31 River Park, 77 De Waal Rd<br>Diep River, Cape Town, 7800</span></li>
-            <li class="flex items-center gap-3"><i data-lucide="clock" class="w-4 h-4 text-white/30 flex-shrink-0"></i><span class="text-white/45 text-sm">Mon–Fri: 8:00am – 5:00pm</span></li>
-            <li class="flex items-center gap-3"><i data-lucide="message-circle" class="w-4 h-4 text-white/30 flex-shrink-0"></i><a href="https://wa.me/27716737748" target="_blank" rel="noopener" class="text-white/45 hover:text-white text-sm transition-colors">+27 71 673 7748</a></li>
-            <li class="flex items-center gap-3"><i data-lucide="mail" class="w-4 h-4 text-white/30 flex-shrink-0"></i><a href="mailto:orders@thecookiefactory.co.za" class="text-white/45 hover:text-white text-sm transition-colors">orders@thecookiefactory.co.za</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="pt-7 flex flex-col sm:flex-row items-center justify-between gap-3 text-white/25 text-xs">
-        <p><span class="copyright-text">&copy; 2026 The Cookie Factory. All rights reserved.</span> <a href="secret-recipe.html" class="egg-crumb-link" rel="nofollow" aria-label="?">·</a></p>
-        <p>Factory Store Pricing Only</p>
-      </div>
-    </div>
-  </footer>
+<button id="back-to-top" type="button" aria-label="Back to top">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+</button>
+<button class="tt" id="theme-toggle" type="button" aria-label="Switch colour theme">
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.4v2.2M12 19.4v2.2M4.2 4.2l1.6 1.6M18.2 18.2l1.6 1.6M2.4 12h2.2M19.4 12h2.2M4.2 19.8l1.6-1.6M18.2 5.8l1.6-1.6"/></svg>
+</button>
 
-  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
-  <script src="js/main.js"></script>
-  <script>lucide.createIcons();</script>
+<script src="js/main.js" defer></script>
 </body>
 </html>

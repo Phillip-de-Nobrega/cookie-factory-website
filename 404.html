@@ -1,55 +1,157 @@
 <!DOCTYPE html>
 <html lang="en-ZA">
 <head>
+  <!--
+       🍪
+      ( o o )
+       \___/
+    You found the crumbs behind the curtain too.
+    We're hiring: thecookiefactory.co.za/careers.html
+  -->
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Page Not Found — The Cookie Factory</title>
-  <meta name="robots" content="noindex">
+  <meta name="description" content="We couldn't find the page you were looking for — but there are still plenty of biscuits to discover.">
+  <link rel="canonical" href="https://thecookiefactory.co.za/404.html">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#C8202D">
+  <meta name="color-scheme" content="light dark">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://thecookiefactory.co.za/404.html">
+  <meta property="og:title" content="Page Not Found — The Cookie Factory">
+  <meta property="og:description" content="We couldn't find the page you were looking for — but there are still plenty of biscuits to discover.">
+  <meta property="og:image" content="https://thecookiefactory.co.za/assets/images/og-share.jpg">
+  <meta property="og:site_name" content="The Cookie Factory">
+  <meta property="og:locale" content="en_ZA">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Page Not Found — The Cookie Factory">
+  <meta name="twitter:description" content="We couldn't find the page you were looking for — but there are still plenty of biscuits to discover.">
+  <meta name="twitter:image" content="https://thecookiefactory.co.za/assets/images/og-share.jpg">
   <link rel="icon" href="assets/images/logo.png">
+  <link rel="apple-touch-icon" href="assets/images/logo.png">
+  <link rel="preload" href="assets/fonts/karla.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/playfair-sc-700.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/styles.css">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        fontFamily: {
-          serif: ['"Playfair Display SC"', 'Georgia', 'serif'],
-          sans: ['Karla', 'system-ui', 'sans-serif'],
-        },
-        extend: {
-          colors: {
-            brand: { DEFAULT: '#C8202D', dark: '#9E1621' },
-            cream: '#FDF8F4',
-            warm: '#F0E6D6',
-            'warm-border': '#E7E0D8',
-          },
-        },
-      },
-    }
-  </script>
+  <script>try{var t=localStorage.getItem('cf_theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
 </head>
-<body class="font-sans antialiased text-gray-900 bg-cream">
+<body>
+<a class="skip" href="#main">Skip to content</a>
 
-  <section class="min-h-screen flex items-center">
-    <div class="max-w-xl mx-auto px-6 text-center py-20">
-      <a href="/" class="inline-block mb-8">
-        <img src="assets/images/logo.png" alt="The Cookie Factory" class="h-16 w-16 rounded-full object-cover mx-auto">
-      </a>
-      <p class="text-6xl mb-4">🍪</p>
-      <h1 class="font-serif text-4xl lg:text-5xl text-gray-900 leading-tight mb-5">This page crumbled away.</h1>
-      <p class="text-gray-500 text-base leading-relaxed mb-10">We couldn't find the page you were looking for — but there are still plenty of biscuits to discover.</p>
-      <div class="flex flex-wrap gap-4 justify-center">
-        <a href="/" class="inline-flex items-center gap-2 bg-brand hover:bg-brand-dark text-white text-xs font-semibold tracking-[0.1em] uppercase px-7 py-4 rounded transition-colors">
-          Back to Home
-        </a>
-        <a href="/products.html" class="inline-flex items-center gap-2 border border-warm-border hover:border-brand text-gray-700 text-xs font-semibold tracking-[0.1em] uppercase px-7 py-4 rounded transition-colors">
-          Browse Products
-        </a>
-        <a href="https://wa.me/27716737748" target="_blank" rel="noopener" class="inline-flex items-center gap-2 border border-warm-border hover:border-brand text-gray-700 text-xs font-semibold tracking-[0.1em] uppercase px-7 py-4 rounded transition-colors">
-          WhatsApp Us
-        </a>
-      </div>
+<nav class="nav" id="nav" aria-label="Primary">
+  <div class="wrap nav-in">
+    <a class="brandmark" href="index.html">
+      <img class="seal" src="assets/images/logo.png" alt="" width="240" height="240">
+      <span class="brandname">The Cookie Factory</span>
+    </a>
+    <ul class="navlinks">
+      <li><a class="navlink" href="about.html" data-nav="about.html">About</a></li>
+      <li><a class="navlink" href="index.html" data-nav="index.html">Home</a></li>
+      <li><a class="navlink" href="products.html" data-nav="products.html">Products</a></li>
+      <li><a class="navlink" href="where-to-buy.html" data-nav="where-to-buy.html">Where to Buy</a></li>
+      <li><a class="navlink" href="order.html" data-nav="order.html">Order</a></li>
+      <li><a class="navlink" href="careers.html" data-nav="careers.html">Careers</a></li>
+      <li><a class="navlink" href="contact.html" data-nav="contact.html">Contact</a></li>
+    </ul>
+    <div class="btn-row">
+      <a class="btn btn-primary btn-sm nav-cta" href="order.html">Order Now</a>
+      <button class="burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mnav">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+<div class="mnav" id="mnav">
+  <ul>
+    <li><a href="about.html" data-nav="about.html">About</a></li>
+    <li><a href="index.html" data-nav="index.html">Home</a></li>
+    <li><a href="products.html" data-nav="products.html">Products</a></li>
+    <li><a href="where-to-buy.html" data-nav="where-to-buy.html">Where to Buy</a></li>
+    <li><a href="order.html" data-nav="order.html">Order</a></li>
+    <li><a href="careers.html" data-nav="careers.html">Careers</a></li>
+    <li><a href="contact.html" data-nav="contact.html">Contact</a></li>
+  </ul>
+</div>
+
+<main id="main">
+  <section class="notfound">
+    <div class="wrap stack" style="gap:1.2rem;align-items:center;">
+      <p style="font-size:2.6rem;line-height:1;" aria-hidden="true">🍪</p>
+      <h1 class="display" style="font-size:clamp(2rem,5vw,3.4rem);">This page crumbled away.</h1>
+      <p class="lede" style="margin-inline:auto;">We couldn't find the page you were looking for — but there are still plenty of biscuits to discover.</p>
+      <p class="btn-row" style="justify-content:center;margin-top:.6rem;">
+        <a class="btn btn-primary" href="index.html">Back to Home</a>
+        <a class="btn btn-ghost" href="products.html">Browse Products</a>
+        <a class="btn btn-ghost" href="contact.html">Contact Us</a>
+      </p>
     </div>
   </section>
+</main>
 
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brandmark" href="index.html" style="margin-bottom:1rem;">
+          <img class="seal" src="assets/images/logo.png" alt="" width="240" height="240">
+          <span class="brandname">The Cookie Factory</span>
+        </a>
+        <p style="font-size:.86rem;max-width:30ch;">Handcrafted biscuits made with love since 2002. Quality you can taste in every bite.</p>
+        <div class="socials">
+          <a href="https://www.instagram.com/thecookiefactory.official/" target="_blank" rel="noopener" aria-label="The Cookie Factory on Instagram">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://www.facebook.com/cookiefactory204" target="_blank" rel="noopener" aria-label="The Cookie Factory on Facebook">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M15 3h-2.5A3.5 3.5 0 0 0 9 6.5V9H7v3h2v9h3v-9h2.5l.5-3H12V6.5a1 1 0 0 1 1-1h2z"/></svg>
+          </a>
+        </div>
+      </div>
+      <nav aria-labelledby="foot-nav">
+        <h2 id="foot-nav">Navigate</h2>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="where-to-buy.html">Where to Buy</a></li>
+          <li><a href="order.html">Order</a></li>
+          <li><a href="careers.html">Careers</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <nav aria-labelledby="foot-prod">
+        <h2 id="foot-prod">Products</h2>
+        <ul>
+          <li><a href="products.html#home-style">Home-Style Cookies</a></li>
+          <li><a href="products.html#luxury-creams">Luxury Creams</a></li>
+          <li><a href="products.html#mini-biscuits">Mini Biscuits</a></li>
+          <li><a href="products.html#assorted-bucket">Assorted Bucket</a></li>
+          <li><a href="products.html#value-packs">Value Packs</a></li>
+          <li><a href="products.html#in-store-exclusive">In-Store Exclusives</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h2>Contact</h2>
+        <ul>
+          <li>31 River Park, 77 De Waal Rd<br>Diep River, Cape Town, 7800</li>
+          <li>Mon–Fri: 8:00am – 5:00pm</li>
+          <li><a href="tel:+27716737748">+27 71 673 7748</a></li>
+          <li><a href="mailto:orders@thecookiefactory.co.za">orders@thecookiefactory.co.za</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-base">
+      <p><button type="button" class="copyright-line">© 2026 The Cookie Factory. All rights reserved.</button></p>
+      <p>31 River Park, Diep River, Cape Town <a class="egg-crumb" href="secret-recipe.html" aria-label="A crumb">🍪</a></p>
+    </div>
+  </div>
+</footer>
+
+<button id="back-to-top" type="button" aria-label="Back to top">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+</button>
+<button class="tt" id="theme-toggle" type="button" aria-label="Switch colour theme">
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.4v2.2M12 19.4v2.2M4.2 4.2l1.6 1.6M18.2 18.2l1.6 1.6M2.4 12h2.2M19.4 12h2.2M4.2 19.8l1.6-1.6M18.2 5.8l1.6-1.6"/></svg>
+</button>
+
+<script src="js/main.js" defer></script>
 </body>
 </html>

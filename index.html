@@ -8,12 +8,13 @@
     You found the crumbs behind the curtain too.
     We're hiring: thecookiefactory.co.za/careers.html
   -->
-
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>The Cookie Factory — Handcrafted Biscuits, Diep River</title>
   <meta name="description" content="The Cookie Factory — home-style baked biscuits crafted by master bakers since 2002. Visit our factory store in Diep River, Cape Town, or request delivery.">
   <link rel="canonical" href="https://thecookiefactory.co.za/">
+  <meta name="theme-color" content="#C8202D">
+  <meta name="color-scheme" content="light dark">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://thecookiefactory.co.za/">
   <meta property="og:title" content="The Cookie Factory — Handcrafted Biscuits Since 2002">
@@ -26,26 +27,11 @@
   <meta name="twitter:description" content="The Cookie Factory — home-style baked biscuits crafted by master bakers since 2002. Visit our factory store in Diep River, Cape Town, or request delivery.">
   <meta name="twitter:image" content="https://thecookiefactory.co.za/assets/images/og-share.jpg">
   <link rel="icon" href="assets/images/logo.png">
+  <link rel="apple-touch-icon" href="assets/images/logo.png">
+  <link rel="preload" href="assets/fonts/karla.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/playfair-sc-700.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/styles.css">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        fontFamily: {
-          serif: ['"Playfair Display SC"', 'Georgia', 'serif'],
-          sans: ['Karla', 'system-ui', 'sans-serif'],
-        },
-        extend: {
-          colors: {
-            brand: { DEFAULT: '#C8202D', dark: '#9E1621' },
-            cream: '#FDF8F4',
-            warm: '#F0E6D6',
-            'warm-border': '#E7E0D8',
-          },
-        },
-      },
-    }
-  </script>
+  <script>try{var t=localStorage.getItem('cf_theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -64,348 +50,229 @@
       "postalCode": "7800",
       "addressCountry": "ZA"
     },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": -34.0361,
-      "longitude": 18.4722
-    },
+    "geo": { "@type": "GeoCoordinates", "latitude": -34.0361, "longitude": 18.4722 },
     "openingHoursSpecification": [{
       "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-      "opens": "08:00",
-      "closes": "17:00"
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "08:00", "closes": "17:00"
     }],
     "hasMap": "https://www.google.com/maps?q=31+River+Park,+77+De+Waal+Road,+Diep+River,+Cape+Town,+7800",
-    "sameAs": [
-      "https://www.instagram.com/thecookiefactory.official/",
-      "https://www.facebook.com/cookiefactory204"
-    ]
+    "sameAs": ["https://www.instagram.com/thecookiefactory.official/","https://www.facebook.com/cookiefactory204"]
   }
   </script>
 </head>
-<body class="font-sans antialiased text-gray-900 bg-white">
+<body>
+<a class="skip" href="#main">Skip to content</a>
 
-  <!-- Navigation -->
-  <nav id="nav" class="fixed inset-x-0 top-0 z-50" data-hero="true">
-    <div class="max-w-7xl mx-auto px-6 lg:px-8 h-20 flex items-center justify-between">
-      <a href="index.html" class="flex-shrink-0">
-        <img src="assets/images/logo.png" alt="The Cookie Factory" class="h-11 w-11 rounded-full object-cover">
-      </a>
-      <ul class="hidden lg:flex items-center gap-1">
-        <li><a href="about.html" class="nav-link px-4 py-2 rounded-md">About</a></li>
-        <li><a href="index.html" class="nav-link px-4 py-2 rounded-md">Home</a></li>
-        <li><a href="products.html" class="nav-link px-4 py-2 rounded-md">Products</a></li>
-        <li><a href="where-to-buy.html" class="nav-link px-4 py-2 rounded-md">Where to Buy</a></li>
-        <li><a href="order.html" class="nav-link px-4 py-2 rounded-md">Order</a></li>
-        <li><a href="careers.html" class="nav-link px-4 py-2 rounded-md">Careers</a></li>
-        <li><a href="contact.html" class="nav-link px-4 py-2 rounded-md">Contact</a></li>
-      </ul>
-      <div class="flex items-center gap-3">
-        <a href="order.html" class="nav-cta hidden lg:inline-flex">Order Now</a>
-        <button id="burger" class="lg:hidden p-2 rounded cursor-pointer" aria-label="Open menu" aria-expanded="false">
-          <i data-lucide="menu" class="burger-icon w-6 h-6"></i>
-        </button>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Mobile Navigation -->
-  <div id="mobile-nav" class="fixed inset-x-0 z-40 bg-white border-b border-warm-border shadow-lg" style="top:80px;">
-    <div class="max-w-7xl mx-auto px-6 py-5">
-      <ul class="flex flex-col gap-0.5 mb-5">
-        <li><a href="about.html" class="block px-4 py-3 text-sm font-medium text-gray-600 hover:text-gray-900 hover:bg-cream rounded-md transition-colors">About</a></li>
-        <li><a href="index.html" class="block px-4 py-3 text-sm font-medium text-gray-600 hover:text-gray-900 hover:bg-cream rounded-md transition-colors">Home</a></li>
-        <li><a href="products.html" class="block px-4 py-3 text-sm font-medium text-gray-600 hover:text-gray-900 hover:bg-cream rounded-md transition-colors">Products</a></li>
-        <li><a href="where-to-buy.html" class="block px-4 py-3 text-sm font-medium text-gray-600 hover:text-gray-900 hover:bg-cream rounded-md transition-colors">Where to Buy</a></li>
-        <li><a href="order.html" class="block px-4 py-3 text-sm font-medium text-gray-600 hover:text-gray-900 hover:bg-cream rounded-md transition-colors">Order</a></li>
-        <li><a href="careers.html" class="block px-4 py-3 text-sm font-medium text-gray-600 hover:text-gray-900 hover:bg-cream rounded-md transition-colors">Careers</a></li>
-        <li><a href="contact.html" class="block px-4 py-3 text-sm font-medium text-gray-600 hover:text-gray-900 hover:bg-cream rounded-md transition-colors">Contact</a></li>
-      </ul>
-      <a href="order.html" class="flex justify-center w-full bg-brand hover:bg-brand-dark text-white text-xs font-semibold tracking-[0.1em] uppercase py-3.5 rounded transition-colors">Order Now</a>
+<nav class="nav" id="nav" aria-label="Primary" data-hero="true">
+  <div class="wrap nav-in">
+    <a class="brandmark" href="index.html">
+      <img class="seal" src="assets/images/logo.png" alt="" width="240" height="240">
+      <span class="brandname">The Cookie Factory</span>
+    </a>
+    <ul class="navlinks">
+      <li><a class="navlink" href="about.html" data-nav="about.html">About</a></li>
+      <li><a class="navlink" href="index.html" data-nav="index.html">Home</a></li>
+      <li><a class="navlink" href="products.html" data-nav="products.html">Products</a></li>
+      <li><a class="navlink" href="where-to-buy.html" data-nav="where-to-buy.html">Where to Buy</a></li>
+      <li><a class="navlink" href="order.html" data-nav="order.html">Order</a></li>
+      <li><a class="navlink" href="careers.html" data-nav="careers.html">Careers</a></li>
+      <li><a class="navlink" href="contact.html" data-nav="contact.html">Contact</a></li>
+    </ul>
+    <div class="btn-row">
+      <a class="btn btn-primary btn-sm nav-cta" href="order.html">Order Now</a>
+      <button class="burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mnav">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
     </div>
   </div>
+</nav>
+<div class="mnav" id="mnav">
+  <ul>
+    <li><a href="about.html" data-nav="about.html">About</a></li>
+    <li><a href="index.html" data-nav="index.html">Home</a></li>
+    <li><a href="products.html" data-nav="products.html">Products</a></li>
+    <li><a href="where-to-buy.html" data-nav="where-to-buy.html">Where to Buy</a></li>
+    <li><a href="order.html" data-nav="order.html">Order</a></li>
+    <li><a href="careers.html" data-nav="careers.html">Careers</a></li>
+    <li><a href="contact.html" data-nav="contact.html">Contact</a></li>
+  </ul>
+</div>
 
-  <!-- Hero -->
-  <section class="relative h-screen min-h-[640px] flex items-center hero-bg">
-    <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/45 to-black/20"></div>
-    <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 pt-20 w-full">
-      <div class="max-w-2xl fade-up">
-        <p class="text-white/60 text-xs font-semibold tracking-[0.2em] uppercase mb-6">Est. 2002 &nbsp;&middot;&nbsp; Diep River, Cape Town, South Africa</p>
-        <h1 class="font-serif text-5xl md:text-6xl lg:text-7xl text-white leading-[1.1] mb-7">Crafted with Care,<br>Baked with Love.</h1>
-        <p class="text-white/75 text-lg leading-relaxed mb-10 max-w-xl">Home-style baked biscuits made with stone ground flour, quality ingredients, and the care of master bakers.</p>
-        <div class="flex flex-wrap gap-4">
-          <a href="products.html" class="inline-flex items-center gap-2 bg-brand hover:bg-brand-dark text-white text-xs font-semibold tracking-[0.1em] uppercase px-8 py-4 rounded transition-colors cursor-pointer">
-            View Our Products
-            <i data-lucide="arrow-right" class="w-4 h-4"></i>
-          </a>
-          <a href="where-to-buy.html" class="inline-flex items-center gap-2 border border-white/40 hover:border-white/80 text-white text-xs font-semibold tracking-[0.1em] uppercase px-8 py-4 rounded transition-colors cursor-pointer">
-            Visit Our Store
-          </a>
+<main id="main">
+  <header class="hero">
+    <div class="hero-plate" id="hero-plate">
+      <picture>
+        <source srcset="assets/images/hero-baker.webp" type="image/webp">
+        <img src="assets/images/hero-baker.jpeg" alt="A master baker at The Cookie Factory working beside the oven racks" width="1139" height="1600" fetchpriority="high">
+      </picture>
+    </div>
+    <div class="hero-veil" aria-hidden="true"></div>
+    <div class="wrap hero-in">
+      <p class="hero-eyebrow">Est. 2002 &nbsp;·&nbsp; Diep River, Cape Town</p>
+      <h1><span class="ln"><span>No two</span></span><span class="ln"><span>biscuits are</span></span><span class="ln"><span>ever the same.</span></span></h1>
+      <p class="hero-sub">Home-style baked biscuits made with stone-ground flour, quality ingredients, and the care of master bakers — on the shelves of 229 stores across the Western Cape, and sold straight from our factory store.</p>
+      <div class="hero-cta btn-row">
+        <a class="btn btn-primary" href="products.html">View Our Products</a>
+        <a class="btn btn-ghost" href="where-to-buy.html">Visit Our Store</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="marquee" aria-hidden="true"><div class="marquee-track">
+    <span>Handcrafted since 2002</span><span>Stone-ground flour</span><span>Halaal · SANHA certified</span><span>HACCP audited</span><span>229 stockists</span><span>Diep River, Cape Town</span>
+    <span>Handcrafted since 2002</span><span>Stone-ground flour</span><span>Halaal · SANHA certified</span><span>HACCP audited</span><span>229 stockists</span><span>Diep River, Cape Town</span>
+  </div></div>
+  <section class="sec">
+    <div class="wrap">
+      <div class="split split--wide">
+        <div class="rv stack" style="gap:1.2rem;">
+          <p class="label">Our Story</p>
+          <h2 class="display">No two biscuits ever look exactly the same.</h2>
+          <p class="body-copy">Since 2002, The Cookie Factory has been baking and crafting biscuits the way they were always meant to be made — in small batches with carefully sourced, quality ingredients you can taste in every bite.</p>
+          <p class="body-copy">Made with stone-ground flour and real ingredients, each batch carries the warmth of traditional baking. As an established biscuit manufacturer, we supply wholesale and bulk orders to retailers, cafés and convenience stores across the Western Cape and beyond — while still welcoming walk-in customers at our Diep River factory store.</p>
+          <blockquote class="pull">&ldquo;We pride ourselves on never having two biscuits look exactly the same.&rdquo;</blockquote>
+          <p><a class="btn btn-primary" href="about.html">Read Our Story</a></p>
         </div>
+        <div class="rv rv-d2">
+          <figure class="plate">
+            <picture>
+            <source srcset="assets/images/hero-rolling.webp" type="image/webp">
+            <img src="assets/images/hero-rolling.jpeg" alt="A baker rolling biscuit dough at the Diep River factory" width="1000" height="729" loading="lazy" decoding="async">
+          </picture>
+            <figcaption class="plate-stamp"><b>2002</b><small>Established</small></figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="rv" style="margin-top:clamp(2.5rem,6vw,4rem);">
+        <hr class="rack" data-rack>
+        <ul class="figs">
+          <li class="fig"><b data-count="24">24</b><small>Years baking</small></li>
+          <li class="fig"><b data-count="229">229</b><small>Stockists</small></li>
+          <li class="fig"><b data-count="5">5</b><small>Product ranges</small></li>
+          <li class="fig"><b data-count="12">12</b><small>Month shelf life</small></li>
+        </ul>
       </div>
     </div>
   </section>
 
-  <!-- Brand Strip -->
-  <div class="bg-brand py-4">
-    <div class="max-w-7xl mx-auto px-6 lg:px-8">
-      <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-1">
-        <span class="text-white text-xs font-semibold tracking-[0.15em] uppercase">Stone Ground Flour</span>
-        <span class="w-1 h-1 rounded-full bg-white/40 hidden sm:block" aria-hidden="true"></span>
-        <span class="text-white text-xs font-semibold tracking-[0.15em] uppercase">Master Bakers</span>
-        <span class="w-1 h-1 rounded-full bg-white/40 hidden sm:block" aria-hidden="true"></span>
-        <span class="text-white text-xs font-semibold tracking-[0.15em] uppercase">Handcrafted Since 2002</span>
-        <span class="w-1 h-1 rounded-full bg-white/40 hidden sm:block" aria-hidden="true"></span>
-        <span class="text-white text-xs font-semibold tracking-[0.15em] uppercase">Diep River, Cape Town, South Africa</span>
+  <section class="sec sec--raised">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <p class="label">Our Products</p>
+        <h2 class="display">A biscuit for every occasion.</h2>
+        <p class="lede">From tea-time classics to gift selections — handcrafted in a range of flavours and sizes, available at our factory store and selected retailers.</p>
       </div>
+      <div class="grid g4">
+        <a class="tilt rv" href="products.html#home-style"><div class="tilt-media"><picture>
+            <source srcset="assets/images/product-ginger.webp" type="image/webp">
+            <img src="assets/images/product-ginger.jpeg" alt="Home-style ginger cookies in a wire basket" width="676" height="900" loading="lazy" decoding="async">
+          </picture></div><div class="tilt-body"><h3>Home-Style Cookies</h3><p>Ginger, Shortbread, Choc Chip, Oaties, Crunchies and more.</p><ul class="chips"><li class="chip">200g</li><li class="chip">400g</li><li class="chip">800g</li></ul><span class="go">See range <svg width="14" height="10" viewBox="0 0 14 10" fill="none" aria-hidden="true"><path d="M1 5h11M8.5 1.5 12 5l-3.5 3.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div></a>
+        <a class="tilt rv rv-d1" href="products.html#luxury-creams"><div class="tilt-media"><picture>
+            <source srcset="assets/images/product-choc-cream.webp" type="image/webp">
+            <img src="assets/images/product-choc-cream.jpeg" alt="Chocolate cream biscuits served beside a cup of coffee" width="677" height="900" loading="lazy" decoding="async">
+          </picture></div><div class="tilt-body"><h3>Luxury Creams</h3><p>Chocolate, Yoghurt, Cappuccino and Lemon — a crowd favourite.</p><ul class="chips"><li class="chip">4 flavours</li></ul><span class="go">See range <svg width="14" height="10" viewBox="0 0 14 10" fill="none" aria-hidden="true"><path d="M1 5h11M8.5 1.5 12 5l-3.5 3.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div></a>
+        <a class="tilt rv rv-d2" href="products.html#mini-biscuits"><div class="tilt-media"><picture>
+            <source srcset="assets/images/product-mini-biscuits.webp" type="image/webp">
+            <img src="assets/images/product-mini-biscuits.jpeg" alt="Mini biscuit strips in a glass jar" width="724" height="900" loading="lazy" decoding="async">
+          </picture></div><div class="tilt-body"><h3>Mini Biscuits</h3><p>Portioned snack size — ideal for lunchboxes and events.</p><ul class="chips"><li class="chip">Strip 5 &times; 35g</li></ul><span class="go">See range <svg width="14" height="10" viewBox="0 0 14 10" fill="none" aria-hidden="true"><path d="M1 5h11M8.5 1.5 12 5l-3.5 3.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div></a>
+        <a class="tilt rv rv-d3" href="products.html#assorted-bucket"><div class="tilt-media"><picture>
+            <source srcset="assets/images/gift-tin.webp" type="image/webp">
+            <img src="assets/images/gift-tin.jpeg" alt="A Cookie Factory gift selection tin tied with a red ribbon" width="1100" height="705" loading="lazy" decoding="async">
+          </picture></div><div class="tilt-body"><h3>Gift &amp; Assorted</h3><p>Our 1.5kg Assorted Biscuit Bucket — the perfect gift.</p><ul class="chips"><li class="chip">1.5kg</li><li class="chip">Corporate</li></ul><span class="go">See range <svg width="14" height="10" viewBox="0 0 14 10" fill="none" aria-hidden="true"><path d="M1 5h11M8.5 1.5 12 5l-3.5 3.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div></a>
+      </div>
+      <p class="rv" style="margin-top:2.2rem;text-align:center;"><a class="btn btn-ghost" href="products.html">View Full Product Range</a></p>
+    </div>
+  </section>
+
+  <section class="sec sec--ink">
+    <div class="wrap">
+      <div class="split split--wide">
+        <div class="rv stack" style="gap:1.2rem;">
+          <p class="label">Factory Store</p>
+          <h2 class="display">Come visit us in Diep River.</h2>
+          <p class="body-copy">Our factory store is open to the public. Browse our full range and other products exclusively available at the factory store, and experience the warmth of The Cookie Factory first hand.</p>
+          <div class="btn-row"><a class="btn btn-primary" href="where-to-buy.html">Where to Buy</a><a class="btn btn-ghost" href="order.html">Request Delivery</a></div>
+        </div>
+        <div class="rv rv-d2">
+          <dl class="rows">
+            <div class="row"><dt>Address</dt><dd>31 River Park, 77 De Waal Road<br>Diep River, Cape Town, 7800</dd></div>
+            <div class="row"><dt>Trading hours</dt><dd>Monday &ndash; Friday: 8:00am &ndash; 5:00pm<br>Closed weekends &amp; public holidays</dd></div>
+            <div class="row"><dt>Call us</dt><dd><a href="tel:+27716737748">+27 71 673 7748</a></dd></div>
+            <div class="row"><dt>WhatsApp</dt><dd><a href="https://wa.me/27716737748" target="_blank" rel="noopener">Message us on WhatsApp</a></dd></div>
+            <div class="row"><dt>Orders</dt><dd><a href="mailto:orders@thecookiefactory.co.za">orders@thecookiefactory.co.za</a></dd></div>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brandmark" href="index.html" style="margin-bottom:1rem;">
+          <img class="seal" src="assets/images/logo.png" alt="" width="240" height="240">
+          <span class="brandname">The Cookie Factory</span>
+        </a>
+        <p style="font-size:.86rem;max-width:30ch;">Handcrafted biscuits made with love since 2002. Quality you can taste in every bite.</p>
+        <div class="socials">
+          <a href="https://www.instagram.com/thecookiefactory.official/" target="_blank" rel="noopener" aria-label="The Cookie Factory on Instagram">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://www.facebook.com/cookiefactory204" target="_blank" rel="noopener" aria-label="The Cookie Factory on Facebook">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M15 3h-2.5A3.5 3.5 0 0 0 9 6.5V9H7v3h2v9h3v-9h2.5l.5-3H12V6.5a1 1 0 0 1 1-1h2z"/></svg>
+          </a>
+        </div>
+      </div>
+      <nav aria-labelledby="foot-nav">
+        <h2 id="foot-nav">Navigate</h2>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="where-to-buy.html">Where to Buy</a></li>
+          <li><a href="order.html">Order</a></li>
+          <li><a href="careers.html">Careers</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <nav aria-labelledby="foot-prod">
+        <h2 id="foot-prod">Products</h2>
+        <ul>
+          <li><a href="products.html#home-style">Home-Style Cookies</a></li>
+          <li><a href="products.html#luxury-creams">Luxury Creams</a></li>
+          <li><a href="products.html#mini-biscuits">Mini Biscuits</a></li>
+          <li><a href="products.html#assorted-bucket">Assorted Bucket</a></li>
+          <li><a href="products.html#value-packs">Value Packs</a></li>
+          <li><a href="products.html#in-store-exclusive">In-Store Exclusives</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h2>Contact</h2>
+        <ul>
+          <li>31 River Park, 77 De Waal Rd<br>Diep River, Cape Town, 7800</li>
+          <li>Mon–Fri: 8:00am – 5:00pm</li>
+          <li><a href="tel:+27716737748">+27 71 673 7748</a></li>
+          <li><a href="mailto:orders@thecookiefactory.co.za">orders@thecookiefactory.co.za</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-base">
+      <p><button type="button" class="copyright-line">© 2026 The Cookie Factory. All rights reserved.</button></p>
+      <p>31 River Park, Diep River, Cape Town <a class="egg-crumb" href="secret-recipe.html" aria-label="A crumb">🍪</a></p>
     </div>
   </div>
+</footer>
 
-  <!-- Our Story -->
-  <section class="py-24 lg:py-32 bg-white">
-    <div class="max-w-7xl mx-auto px-6 lg:px-8">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
-        <div>
-          <p class="text-brand text-xs font-semibold tracking-[0.18em] uppercase mb-5 fade-up">Our Story</p>
-          <h2 class="font-serif text-4xl lg:text-5xl text-gray-900 leading-tight mb-8 fade-up delay-1">No two biscuits ever look exactly the same</h2>
-          <div class="space-y-5 text-gray-500 text-[15px] leading-relaxed fade-up delay-2">
-            <p>Since 2002, The Cookie Factory has been baking and crafting cookies the way they were always meant to be made — in small batches with carefully sourced, quality ingredients you can taste in every bite.</p>
-            <p>Operating from our factory in Diep River, Cape Town, South Africa, our master bakers take pride in producing biscuits with a home-style character that sets us apart. Made with stone ground flour and real ingredients, each batch carries the warmth of traditional baking.</p>
-            <p>From our classic Shortbread and Ginger cookies to our rich and indulgent Luxury Creams, every product is a testament to craft — unique, as home baking should be.</p>
-            <p>As an established biscuit manufacturer, we supply wholesale and bulk orders to retailers, cafés and convenience stores across the Western Cape and beyond — while still welcoming walk-in customers at our Diep River factory store.</p>
-          </div>
-          <blockquote class="mt-8 pl-6 border-l-2 border-brand fade-up delay-3">
-            <p class="font-serif text-lg italic text-gray-700 leading-relaxed">"We pride ourselves on never having two biscuits look exactly the same — each one carefully crafted by a master baker."</p>
-          </blockquote>
-          <a href="products.html" class="inline-flex items-center gap-2 mt-10 bg-brand hover:bg-brand-dark text-white text-xs font-semibold tracking-[0.1em] uppercase px-7 py-3.5 rounded transition-colors cursor-pointer fade-up delay-4">
-            Explore Our Range
-            <i data-lucide="arrow-right" class="w-4 h-4"></i>
-          </a>
-        </div>
-        <div class="relative fade-up delay-2">
-          <div class="rounded-lg overflow-hidden aspect-[4/5]">
-            <img src="assets/images/hero-rolling.jpeg" alt="Master baker at The Cookie Factory rolling biscuit dough" loading="lazy" class="w-full h-full object-cover">
-          </div>
-          <div class="absolute bottom-6 right-6 bg-brand text-white px-5 py-4 rounded shadow-xl text-center">
-            <p class="font-serif text-3xl font-bold leading-none">2002</p>
-            <p class="text-xs tracking-[0.12em] uppercase mt-1.5 text-white/75">Established</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+<button id="back-to-top" type="button" aria-label="Back to top">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+</button>
+<button class="tt" id="theme-toggle" type="button" aria-label="Switch colour theme">
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.4v2.2M12 19.4v2.2M4.2 4.2l1.6 1.6M18.2 18.2l1.6 1.6M2.4 12h2.2M19.4 12h2.2M4.2 19.8l1.6-1.6M18.2 5.8l1.6-1.6"/></svg>
+</button>
 
-  <!-- Product Highlights -->
-  <section class="py-24 lg:py-32 bg-cream">
-    <div class="max-w-7xl mx-auto px-6 lg:px-8">
-      <div class="text-center mb-16 fade-up">
-        <p class="text-brand text-xs font-semibold tracking-[0.18em] uppercase mb-5">Our Products</p>
-        <h2 class="font-serif text-4xl lg:text-5xl text-gray-900 leading-tight mb-5">A biscuit for every occasion</h2>
-        <p class="text-gray-500 text-[15px] leading-relaxed max-w-xl mx-auto">From tea-time classics to gift selections — all handcrafted in a range of flavours and sizes, available at factory store prices.</p>
-      </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div class="bg-white rounded-lg overflow-hidden border border-warm-border hover:shadow-md transition-shadow fade-up delay-1">
-          <div class="aspect-[4/3] overflow-hidden">
-            <img src="assets/images/product-ginger.jpeg" alt="Home-style Ginger Cookies" loading="lazy" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
-          </div>
-          <div class="p-7">
-            <p class="text-brand text-xs font-semibold tracking-[0.14em] uppercase mb-2">Cookies</p>
-            <h3 class="font-serif text-xl text-gray-900 mb-3">Home-Style Cookies</h3>
-            <p class="text-gray-500 text-sm leading-relaxed">Ginger, Shortbread, Choc Chip, Coconut, Oaties and more — available in 200g, 400g and 800g.</p>
-          </div>
-        </div>
-        <div class="bg-white rounded-lg overflow-hidden border border-warm-border hover:shadow-md transition-shadow fade-up delay-2">
-          <div class="aspect-[4/3] overflow-hidden">
-            <img src="assets/images/product-choc-cream.jpeg" alt="Chocolate Cream Biscuits" loading="lazy" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
-          </div>
-          <div class="p-7">
-            <p class="text-brand text-xs font-semibold tracking-[0.14em] uppercase mb-2">Luxury Creams</p>
-            <h3 class="font-serif text-xl text-gray-900 mb-3">Luxury Creams</h3>
-            <p class="text-gray-500 text-sm leading-relaxed">Chocolate, Yoghurt, Cappuccino and Lemon cream-filled biscuits — a crowd favourite, every time.</p>
-          </div>
-        </div>
-        <div class="bg-white rounded-lg overflow-hidden border border-warm-border hover:shadow-md transition-shadow fade-up delay-3">
-          <div class="aspect-[4/3] overflow-hidden">
-            <img src="assets/images/gift-tin.jpeg" alt="Cookie Factory gift selection" loading="lazy" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
-          </div>
-          <div class="p-7">
-            <p class="text-brand text-xs font-semibold tracking-[0.14em] uppercase mb-2">Gift & Assorted</p>
-            <h3 class="font-serif text-xl text-gray-900 mb-3">Gift Selections</h3>
-            <p class="text-gray-500 text-sm leading-relaxed">Our Assorted Biscuit Bucket is the perfect gift — a handpicked mix of our finest biscuits. Contact us for all your corporate events &amp; gifting.</p>
-          </div>
-        </div>
-      </div>
-      <div class="text-center mt-12 fade-up">
-        <a href="products.html" class="inline-flex items-center gap-2 bg-white border border-warm-border hover:border-gray-400 text-gray-700 hover:text-gray-900 text-xs font-semibold tracking-[0.1em] uppercase px-8 py-3.5 rounded transition-colors cursor-pointer">
-          View Full Product Range
-          <i data-lucide="arrow-right" class="w-4 h-4"></i>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Factory Store -->
-  <section class="py-24 lg:py-32 bg-gray-900">
-    <div class="max-w-7xl mx-auto px-6 lg:px-8">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
-        <div>
-          <p class="text-brand text-xs font-semibold tracking-[0.18em] uppercase mb-5 fade-up">Factory Store</p>
-          <h2 class="font-serif text-4xl lg:text-5xl text-white leading-tight mb-6 fade-up delay-1">Come visit us in Diep River</h2>
-          <p class="text-white/55 text-[15px] leading-relaxed mb-10 max-w-lg fade-up delay-2">Our factory store is open to the public. Browse our full range and other products exclusively available at our factory store and experience the warmth of The Cookie Factory first hand.</p>
-          <div class="flex flex-wrap gap-4 fade-up delay-3">
-            <a href="where-to-buy.html" class="inline-flex items-center gap-2 bg-brand hover:bg-brand-dark text-white text-xs font-semibold tracking-[0.1em] uppercase px-7 py-3.5 rounded transition-colors cursor-pointer">
-              Get Directions
-              <i data-lucide="map-pin" class="w-4 h-4"></i>
-            </a>
-            <a href="order.html" class="inline-flex items-center gap-2 border border-white/25 hover:border-white/60 text-white text-xs font-semibold tracking-[0.1em] uppercase px-7 py-3.5 rounded transition-colors cursor-pointer">
-              Request Delivery
-            </a>
-          </div>
-        </div>
-        <div class="space-y-7 fade-up delay-2">
-          <div class="flex items-start gap-4">
-            <div class="w-10 h-10 rounded-lg bg-white/8 flex items-center justify-center flex-shrink-0 mt-0.5">
-              <i data-lucide="map-pin" class="w-5 h-5 text-white/60"></i>
-            </div>
-            <div>
-              <p class="text-white/40 text-xs tracking-[0.12em] uppercase font-semibold mb-1.5">Address</p>
-              <p class="text-white/80 font-medium leading-relaxed">31 River Park, 77 De Waal Road<br>Diep River, Cape Town, 7800</p>
-            </div>
-          </div>
-          <div class="flex items-start gap-4">
-            <div class="w-10 h-10 rounded-lg bg-white/8 flex items-center justify-center flex-shrink-0 mt-0.5">
-              <i data-lucide="clock" class="w-5 h-5 text-white/60"></i>
-            </div>
-            <div>
-              <p class="text-white/40 text-xs tracking-[0.12em] uppercase font-semibold mb-1.5">Trading Hours</p>
-              <p class="text-white/80 font-medium leading-relaxed">Monday – Friday: 8:00am – 5:00pm<br>Saturday &amp; Sunday: Closed</p>
-            </div>
-          </div>
-          <div class="flex items-start gap-4">
-            <div class="w-10 h-10 rounded-lg bg-white/8 flex items-center justify-center flex-shrink-0 mt-0.5">
-              <i data-lucide="message-circle" class="w-5 h-5 text-white/60"></i>
-            </div>
-            <div>
-              <p class="text-white/40 text-xs tracking-[0.12em] uppercase font-semibold mb-1.5">WhatsApp Us</p>
-              <p class="text-white/80 font-medium"><a href="https://wa.me/27716737748" target="_blank" rel="noopener" class="hover:text-white transition-colors">+27 71 673 7748</a></p>
-            </div>
-          </div>
-          <div class="flex items-start gap-4">
-            <div class="w-10 h-10 rounded-lg bg-white/8 flex items-center justify-center flex-shrink-0 mt-0.5">
-              <i data-lucide="mail" class="w-5 h-5 text-white/60"></i>
-            </div>
-            <div>
-              <p class="text-white/40 text-xs tracking-[0.12em] uppercase font-semibold mb-1.5">Orders &amp; Enquiries</p>
-              <p class="text-white/80 font-medium"><a href="mailto:orders@thecookiefactory.co.za" class="hover:text-white transition-colors">orders@thecookiefactory.co.za</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Social Media -->
-  <section class="py-24 bg-cream">
-    <div class="max-w-7xl mx-auto px-6 lg:px-8">
-      <div class="text-center mb-14 fade-up">
-        <p class="text-brand text-xs font-semibold tracking-[0.18em] uppercase mb-5">Follow Us</p>
-        <h2 class="font-serif text-4xl text-gray-900 mb-5">Stay in the loop</h2>
-        <p class="text-gray-500 text-[15px] leading-relaxed max-w-md mx-auto">Follow us for new products, promotions and behind-the-scenes moments from our bakery.</p>
-      </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-5 max-w-2xl mx-auto">
-        <a href="https://www.instagram.com/thecookiefactory.official/" target="_blank" rel="noopener" class="flex items-center gap-5 p-7 bg-white rounded-lg border border-warm-border hover:shadow-md transition-shadow cursor-pointer fade-up delay-1">
-          <div class="w-12 h-12 rounded-xl flex-shrink-0 flex items-center justify-center" style="background:linear-gradient(135deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888)">
-            <svg class="w-5 h-5 fill-white" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
-          </div>
-          <div>
-            <p class="text-gray-400 text-xs tracking-[0.12em] uppercase font-semibold mb-1">Instagram</p>
-            <p class="text-sm font-semibold text-gray-900 mb-1 break-all">@thecookiefactory.official</p>
-            <p class="text-brand text-xs font-semibold">Follow us &rarr;</p>
-          </div>
-        </a>
-        <a href="https://www.facebook.com/cookiefactory204" target="_blank" rel="noopener" class="flex items-center gap-5 p-7 bg-white rounded-lg border border-warm-border hover:shadow-md transition-shadow cursor-pointer fade-up delay-2">
-          <div class="w-12 h-12 rounded-xl flex-shrink-0 flex items-center justify-center bg-[#1877F2]">
-            <svg class="w-5 h-5 fill-white" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-          </div>
-          <div>
-            <p class="text-gray-400 text-xs tracking-[0.12em] uppercase font-semibold mb-1">Facebook</p>
-            <p class="font-serif text-lg text-gray-900 mb-1">The Cookie Factory</p>
-            <p class="text-brand text-xs font-semibold">Like our page &rarr;</p>
-          </div>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-[#0F172A] pt-16 pb-8">
-    <div class="max-w-7xl mx-auto px-6 lg:px-8">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-16 pb-12 border-b border-white/8">
-        <div>
-          <img src="assets/images/logo.png" alt="The Cookie Factory" loading="lazy" class="h-12 w-12 rounded-full object-cover mb-5">
-          <p class="text-white/45 text-sm leading-relaxed mb-7">Handcrafted biscuits made with love since 2002. Quality you can taste in every bite.</p>
-          <div class="flex gap-3">
-            <a href="https://www.instagram.com/thecookiefactory.official/" target="_blank" rel="noopener" aria-label="Instagram" class="w-9 h-9 rounded-lg bg-white/8 hover:bg-brand flex items-center justify-center transition-colors cursor-pointer">
-              <svg class="w-4 h-4 fill-white" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
-            </a>
-            <a href="https://www.facebook.com/cookiefactory204" target="_blank" rel="noopener" aria-label="Facebook" class="w-9 h-9 rounded-lg bg-white/8 hover:bg-brand flex items-center justify-center transition-colors cursor-pointer">
-              <svg class="w-4 h-4 fill-white" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-            </a>
-          </div>
-        </div>
-        <div>
-          <p class="text-white text-xs font-semibold tracking-[0.15em] uppercase mb-6">Navigate</p>
-          <ul class="space-y-3">
-            <li><a href="about.html" class="text-white/45 hover:text-white text-sm transition-colors">About</a></li>
-            <li><a href="index.html" class="text-white/45 hover:text-white text-sm transition-colors">Home</a></li>
-            <li><a href="products.html" class="text-white/45 hover:text-white text-sm transition-colors">Products</a></li>
-            <li><a href="where-to-buy.html" class="text-white/45 hover:text-white text-sm transition-colors">Where to Buy</a></li>
-            <li><a href="order.html" class="text-white/45 hover:text-white text-sm transition-colors">Place an Order</a></li>
-            <li><a href="careers.html" class="text-white/45 hover:text-white text-sm transition-colors">Careers</a></li>
-            <li><a href="contact.html" class="text-white/45 hover:text-white text-sm transition-colors">Contact Us</a></li>
-          </ul>
-        </div>
-        <div>
-          <p class="text-white text-xs font-semibold tracking-[0.15em] uppercase mb-6">Products</p>
-          <ul class="space-y-3">
-            <li><a href="products.html#home-style-cookies" class="text-white/45 hover:text-white text-sm transition-colors">Home-Style Cookies</a></li>
-            <li><a href="products.html#creamed-biscuits" class="text-white/45 hover:text-white text-sm transition-colors">Luxury Creams</a></li>
-            <li><a href="products.html#mini-biscuits" class="text-white/45 hover:text-white text-sm transition-colors">Mini Biscuits</a></li>
-            <li><a href="products.html#assorted-bucket" class="text-white/45 hover:text-white text-sm transition-colors">Assorted Bucket</a></li>
-            <li><a href="products.html#value-packs" class="text-white/45 hover:text-white text-sm transition-colors">Value Packs</a></li>
-          </ul>
-        </div>
-        <div>
-          <p class="text-white text-xs font-semibold tracking-[0.15em] uppercase mb-6">Contact</p>
-          <ul class="space-y-4">
-            <li class="flex items-start gap-3">
-              <i data-lucide="map-pin" class="w-4 h-4 text-white/30 flex-shrink-0 mt-0.5"></i>
-              <span class="text-white/45 text-sm leading-relaxed">31 River Park, 77 De Waal Rd<br>Diep River, Cape Town, 7800</span>
-            </li>
-            <li class="flex items-center gap-3">
-              <i data-lucide="clock" class="w-4 h-4 text-white/30 flex-shrink-0"></i>
-              <span class="text-white/45 text-sm">Mon–Fri: 8:00am – 5:00pm</span>
-            </li>
-            <li class="flex items-center gap-3">
-              <i data-lucide="message-circle" class="w-4 h-4 text-white/30 flex-shrink-0"></i>
-              <a href="https://wa.me/27716737748" target="_blank" rel="noopener" class="text-white/45 hover:text-white text-sm transition-colors">+27 71 673 7748</a>
-            </li>
-            <li class="flex items-center gap-3">
-              <i data-lucide="mail" class="w-4 h-4 text-white/30 flex-shrink-0"></i>
-              <a href="mailto:orders@thecookiefactory.co.za" class="text-white/45 hover:text-white text-sm transition-colors">orders@thecookiefactory.co.za</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="pt-7 flex flex-col sm:flex-row items-center justify-between gap-3 text-white/25 text-xs">
-        <p><span class="copyright-text">&copy; 2026 The Cookie Factory. All rights reserved.</span> <a href="secret-recipe.html" class="egg-crumb-link" rel="nofollow" aria-label="?">·</a></p>
-        <p>31 River Park, Diep River, Cape Town</p>
-      </div>
-    </div>
-  </footer>
-
-  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
-  <script src="js/main.js"></script>
-  <script>lucide.createIcons();</script>
+<script src="js/main.js" defer></script>
 </body>
 </html>
